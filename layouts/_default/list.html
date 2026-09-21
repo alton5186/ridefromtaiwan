@@ -12,33 +12,33 @@
 {{ $pages := .Pages.ByDate.Reverse }}
 <div class="flex flex-col lg:flex-row gap-10">
   {{/* 左:目錄 */}}
-  <aside class="lg:w-72 shrink-0">
+  <aside class="lg:w-80 shrink-0">
     <div class="lg:sticky lg:top-28">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">全部{{ .Title }}</h2>
       {{ range $pages.GroupByDate "2006" }}
         <div class="mb-4">
           <div class="text-lg font-bold text-neutral-700 dark:text-neutral-300">{{ .Key }}</div>
-          <ul class="mt-1 space-y-1 border-s border-neutral-300 dark:border-neutral-700 ps-3">
+          <ul class="mt-3 space-y-3">
             {{ range .Pages }}
-              <li class="text-sm leading-snug"><a class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                {{ with .Params.plan_status }}<span class="ms-1 rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
-                <span class="text-xs text-neutral-400">{{ .Date.Format "1/2" }}</span></li>
+              <li><a class="toc-btn block rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] leading-snug text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
+                {{ with .Params.plan_status }}<span class="ms-1 inline-block rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
+                <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a></li>
             {{ end }}
           </ul>
         </div>
       {{ end }}
       {{ if eq .Section "plans" }}{{ with site.Data.dreams }}
         <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2">夢想清單</h2>
-        <ul class="space-y-1.5 ps-3 border-s border-neutral-300 dark:border-neutral-700">
-          {{ range . }}<li class="text-sm leading-snug">{{ if .url }}<a class="hover:text-primary-600" href="{{ .url }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
-            {{ with .status }}<span class="ms-1 rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
+        <ul class="space-y-3">
+          {{ range . }}<li class="rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] leading-snug text-neutral-800 dark:text-neutral-100 shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)]">{{ if .url }}<a class="font-semibold no-underline hover:text-primary-600" href="{{ .url }}">{{ .name }}</a>{{ else }}<span class="font-semibold">{{ .name }}</span>{{ end }}
+            {{ with .status }}<span class="ms-1 inline-block rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
             {{ with .note }}<div class="text-xs text-neutral-400">{{ . }}</div>{{ end }}</li>{{ end }}
         </ul>
       {{ end }}{{ end }}
       {{ if eq .Section "journeys" }}{{ with site.Taxonomies.series }}
         <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2">系列</h2>
-        <ul class="space-y-1 ps-3 border-s border-neutral-300 dark:border-neutral-700">
-          {{ range . }}<li class="text-sm"><a class="hover:text-primary-600" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="text-xs text-neutral-400">{{ .Count }}</span></li>{{ end }}
+        <ul class="space-y-3">
+          {{ range . }}<li><a class="block rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition" href="{{ .Page.RelPermalink }}"><span class="font-semibold">{{ .Page.Title }}</span> <span class="ms-1 text-xs text-neutral-500 dark:text-neutral-400">{{ .Count }} 篇</span></a></li>{{ end }}
         </ul>
       {{ end }}{{ end }}
     </div>
