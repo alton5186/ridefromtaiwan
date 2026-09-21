@@ -1,6 +1,6 @@
 # Ride from Taiwan — 站台設定
 theme = "blowfish"
-baseURL = "https://example.org/"   # 上線前換成 GitHub Pages 或自己的網域
+baseURL = "https://alton5186.github.io/ridefromtaiwan/"   # 買好 ridefromtaiwan.com 後換
 defaultContentLanguage = "zh-tw"
 enableRobotsTXT = true
 summaryLength = 40
