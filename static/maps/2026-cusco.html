@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b90b194ab3165c2914f2a80bd23040a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h3 style='position:fixed;top:8px;left:60px;z-index:9999;background:#fff;padding:4px 10px;border-radius:6px;font-family:sans-serif'>5-印加古道與馬丘比丘</h3>
+    
+            <div class="folium-map" id="map_7b90b194ab3165c2914f2a80bd23040a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b90b194ab3165c2914f2a80bd23040a = L.map(
+                "map_7b90b194ab3165c2914f2a80bd23040a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+
+            
+
+        
+    
+            var tile_layer_9610200815bc5240dca0d6de1f7abbe2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9610200815bc5240dca0d6de1f7abbe2.addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            var poly_line_2b66f2fd85b1b0809e59f1f895cbf020 = L.polyline(
+                [[-13.196572, -72.462472], [-13.182756, -72.529494], [-13.186853, -72.529664], [-13.182756, -72.529494], [-13.187417, -72.530625], [-13.187136, -72.53415], [-13.182906, -72.529647], [-13.187297, -72.534133], [-13.189853, -72.536225], [-13.193133, -72.536797], [-13.182758, -72.529494], [-13.190169, -72.536889], [-13.183522, -72.539658], [-13.173056, -72.533806], [-13.169667, -72.534011], [-13.167122, -72.543503], [-13.154906, -72.526025], [-13.192494, -72.536767], [-13.169725, -72.533936], [-13.165772, -72.545136]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            poly_line_2b66f2fd85b1b0809e59f1f895cbf020.bindTooltip(
+                `<div>
+                     2026-06-30 · 5-印加古道與馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7acef37e0e50985b72c54bc183ca0c22 = L.circleMarker(
+                [-13.196572, -72.462472],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_7acef37e0e50985b72c54bc183ca0c22.bindTooltip(
+                `<div>
+                     2026-06-30 · 5-印加古道與馬丘比丘 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a682debc0e8a3f2028b479f3d7ed554c = L.polyline(
+                [[-13.164786, -72.543519], [-13.162447, -72.545189], [-13.164642, -72.543489], [-13.154911, -72.525978], [-13.164242, -72.544533], [-13.1633, -72.544456]],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f77b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            poly_line_a682debc0e8a3f2028b479f3d7ed554c.bindTooltip(
+                `<div>
+                     2026-07-01 · 5-印加古道與馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8f6125081aa990af6be799798f4edff = L.circleMarker(
+                [-13.164786, -72.543519],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_b8f6125081aa990af6be799798f4edff.bindTooltip(
+                `<div>
+                     2026-07-01 · 5-印加古道與馬丘比丘 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cfefd89434a582090d77c91becc73cbd = L.polyline(
+                [[-13.257864, -72.268469], [-13.257369, -72.265739], [-13.262858, -72.268822], [-13.250203, -72.287139], [-13.238172, -72.296783], [-13.235353, -72.299606], [-13.229811, -72.306717], [-13.223522, -72.337303], [-13.200944, -72.47075], [-13.197306, -72.474756], [-13.188297, -72.480775], [-13.185356, -72.481667], [-13.182881, -72.483453], [-13.180083, -72.485406], [-13.178792, -72.488967], [-13.171589, -72.497519], [-13.171019, -72.502303], [-13.175214, -72.505164], [-13.181064, -72.503875], [-13.185972, -72.508667], [-13.155608, -72.524117]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            poly_line_cfefd89434a582090d77c91becc73cbd.bindTooltip(
+                `<div>
+                     2026-07-02 · 5-印加古道與馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ee822b027ffe690f302fcb5e512ca1d = L.circleMarker(
+                [-13.257864, -72.268469],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_1ee822b027ffe690f302fcb5e512ca1d.bindTooltip(
+                `<div>
+                     2026-07-02 · 5-印加古道與馬丘比丘 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_36b0bac44dbd079e61dab83fc45ec4b7 = L.polyline(
+                [[-13.154386, -72.525725], [-13.155689, -72.530403], [-13.165119, -72.543411], [-13.163117, -72.545494], [-13.154947, -72.524567], [-13.260819, -72.267119], [-13.264528, -72.234506], [-13.518589, -71.97515], [-13.165106, -72.543656], [-13.164261, -72.545211]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            poly_line_36b0bac44dbd079e61dab83fc45ec4b7.bindTooltip(
+                `<div>
+                     2026-07-03 · 5-印加古道與馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c42ee4cf922afb4c27c480141ffd090b = L.circleMarker(
+                [-13.154386, -72.525725],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_c42ee4cf922afb4c27c480141ffd090b.bindTooltip(
+                `<div>
+                     2026-07-03 · 5-印加古道與馬丘比丘 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e54528fe7ff847ff2b95c21ab4156711 = L.circleMarker(
+                [-13.192494, -72.536767],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_e54528fe7ff847ff2b95c21ab4156711.bindTooltip(
+                `<div>
+                     作品 #2666 10:55 溫納瓦伊納梯田
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d5db3e1d4807ce60c3fac7a6dd58ffe = L.circleMarker(
+                [-13.169725, -72.533936],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_7d5db3e1d4807ce60c3fac7a6dd58ffe.bindTooltip(
+                `<div>
+                     作品 #2714 14:01 第一眼的馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cefd49b892dace2e790a470a64003a0f = L.circleMarker(
+                [-13.165772, -72.545136],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_cefd49b892dace2e790a470a64003a0f.bindTooltip(
+                `<div>
+                     作品 #2764 15:11 馬丘比丘與華納比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4eccb4ee0460e0017b31f6df335391b5 = L.circleMarker(
+                [-13.164242, -72.544533],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_4eccb4ee0460e0017b31f6df335391b5.bindTooltip(
+                `<div>
+                     作品 #2871 10:04 馬丘比丘的清晨,魚鱗雲
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df98753d5de5c3974fdfb540fea4d65e = L.circleMarker(
+                [-13.1633, -72.544456],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_df98753d5de5c3974fdfb540fea4d65e.bindTooltip(
+                `<div>
+                     作品 #2968 11:36 石牆與山谷
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b563364fcd4c965f43550e93933e8a32 = L.circleMarker(
+                [-13.165106, -72.543656],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_b563364fcd4c965f43550e93933e8a32.bindTooltip(
+                `<div>
+                     作品 #3139 13:30 守望者小屋
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4824daca6646a81cee874569974183d2 = L.circleMarker(
+                [-13.164261, -72.545211],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            circle_marker_4824daca6646a81cee874569974183d2.bindTooltip(
+                `<div>
+                     作品 #3361 15:06 駱馬與馬丘比丘
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_7b90b194ab3165c2914f2a80bd23040a.fitBounds(
+                [[-13.518589, -72.545494], [-13.154386, -71.97515]],
+                {}
+            );
+        
+    
+            var marker_e93312fa4c549efc33a747c6ace373f0 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_7b90b194ab3165c2914f2a80bd23040a);
+        
+    
+            var div_icon_a3c931a370611928fe1180f4ed639582 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+        
+    
+                marker_e93312fa4c549efc33a747c6ace373f0.setIcon(div_icon_a3c931a370611928fe1180f4ed639582);
+            
+</script>
+</html>
