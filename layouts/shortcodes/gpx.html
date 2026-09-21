@@ -1,0 +1,3 @@
+{{- /* 這段的 GPX 下載:{{< gpx >}} → static/gpx/<資料夾名>.gpx;可給 km="223" 顯示公里 */ -}}
+{{- $f := printf "gpx/%s.gpx" (path.Base .Page.File.Dir) -}}
+<a href="{{ $f | absURL }}" download class="font-medium">⬇ 下載這段的 GPX</a>{{ with .Get "note" }}<span class="text-sm opacity-70">({{ . }})</span>{{ end }}

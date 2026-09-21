@@ -17,6 +17,7 @@ heroStyle: "background"
 | | |
 |---|---|
 | 日期 | 2025/5/6–5/11 |
+| GPX | {{< gpx note="4 天騎乘軌跡,火車與渡輪已去掉" >}} |
 | 路線 | Lübeck ‖ 火車 ‖ 什切青(Szczecin)→ 跨回德國,Rieth → Ueckermünde → Usedom → 回波蘭 Świnoujście → Międzyzdroje → Świnoujście ‖ 夜船 ‖ Trelleborg(瑞典) |
 | 距離 | 4 天 161 km(GPS:64.4 / 59.3 / 19.1 / 17.9 km);5/6、5/7 沒有騎乘紀錄 |
 | 交通 | 5/6 Lübeck → Szczecin 約 250 km,搭火車;5/11 晚上 TT-Line 夜船 Świnoujście → Trelleborg |

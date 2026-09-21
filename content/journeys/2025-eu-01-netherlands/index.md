@@ -15,6 +15,7 @@ heroStyle: "background"
 | | |
 |---|---|
 | 日期 | 2025/4/30–5/2 |
+| GPX | {{< gpx note="3 天騎乘軌跡,已去掉搭車" >}} |
 | 路線 | Schiphol 機場 → Aalsmeer → Mijdrecht → Driebergen-Rijsenburg → Amerongen → Dieren → Baak → Almen → Borculo → Enschede 東南(德國邊界前),走荷蘭國家自行車道 LF4 |
 | 距離 | 3 天 223 km(GPS:69.4 / 81.1 / 72.9 km) |
 | 住宿 | 帳篷,營地 |
