@@ -16,6 +16,7 @@ heroStyle: "background"
 |---|---|
 | 日期 | 2025/4/30–5/2 |
 | GPX | {{< gpx note="3 天騎乘軌跡,已去掉搭車" >}} |
+| Komoot | 4/30 [①](https://www.komoot.com/tour/2203325467) [②](https://www.komoot.com/tour/2203753282)|5/1 [①](https://www.komoot.com/tour/2205553878) [②](https://www.komoot.com/tour/2206350752) [③](https://www.komoot.com/tour/2209979690) [④](https://www.komoot.com/tour/2206785709)|5/2 [①](https://www.komoot.com/tour/2210954739) [②](https://www.komoot.com/tour/2211586062) |
 | 路線 | Schiphol 機場 → Aalsmeer → Mijdrecht → Driebergen-Rijsenburg → Amerongen → Dieren → Baak → Almen → Borculo → Enschede 東南(德國邊界前),走荷蘭國家自行車道 LF4 |
 | 距離 | 3 天 223 km(GPS:69.4 / 81.1 / 72.9 km) |
 | 住宿 | 帳篷,營地 |

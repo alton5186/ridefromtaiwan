@@ -18,6 +18,7 @@ heroStyle: "background"
 |---|---|
 | 日期 | 2025/5/6–5/11 |
 | GPX | {{< gpx note="4 天騎乘軌跡,火車與渡輪已去掉" >}} |
+| Komoot | 5/8 [①](https://www.komoot.com/tour/2226047839) [②](https://www.komoot.com/tour/2226220107)|5/9 [①](https://www.komoot.com/tour/2228474085)|5/10 [①](https://www.komoot.com/tour/2234639191) [②](https://www.komoot.com/tour/2238987115)|5/11 [①](https://www.komoot.com/tour/2235317324) |
 | 路線 | Lübeck ‖ 火車 ‖ 什切青(Szczecin)→ 跨回德國,Rieth → Ueckermünde → Usedom → 回波蘭 Świnoujście → Międzyzdroje → Świnoujście ‖ 夜船 ‖ Trelleborg(瑞典) |
 | 距離 | 4 天 161 km(GPS:64.4 / 59.3 / 19.1 / 17.9 km);5/6、5/7 沒有騎乘紀錄 |
 | 交通 | 5/6 Lübeck → Szczecin 約 250 km,搭火車;5/11 晚上 TT-Line 夜船 Świnoujście → Trelleborg |
@@ -31,9 +32,21 @@ heroStyle: "background"
 
 這天從 Lübeck 到 Szczecin 有 250 公里,沒有騎乘紀錄,是搭火車過去的。
 
-5/7 在 Szczecin 停一天。天晴。下午三點,紅磚的大教堂,尖塔正頂著太陽,側面還掛著整修用的網子。
+5/7 在 Szczecin 停一天。天晴。下午兩點多,一棟紅磚的大樓,山牆上滿是石雕,屋頂飄著波蘭國旗,門口掛著白鷹的國徽。
+
+![紅磚大樓,屋頂飄著波蘭國旗。](p-szczecin-voivodeship.jpg "紅磚大樓,屋頂飄著波蘭國旗。")
+
+三點,紅磚的大教堂,尖塔正頂著太陽,側面還掛著整修用的網子。
 
 ![Szczecin 的紅磚大教堂,側面掛著整修的網。](p-szczecin-cathedral.jpg "Szczecin 的紅磚大教堂,側面掛著整修的網。")
+
+教堂的側門:尖拱的門框用紅磚和黑磚交錯砌成,木門上刻滿花紋,門楣上一塊刻字的石板。
+
+![大教堂的側門,紅黑磚交錯的尖拱。](p-cathedral-door.jpg "大教堂的側門,紅黑磚交錯的尖拱。")
+
+從門前抬頭看,整面紅磚的塔身一路收到綠色的尖頂。
+
+![仰看大教堂的塔。](p-cathedral-tower.jpg "仰看大教堂的塔。")
 
 再走幾步是老市政廳,哥德式的階梯山牆,頂上一排尖尖的小塔。
 
@@ -101,11 +114,23 @@ heroStyle: "background"
 
 ![Usedom 小鎮的石板路。](p-cobbled-town.jpg "Usedom 小鎮的石板路。")
 
+教堂的塔樓:紅磚的方塔,四角有階梯狀的小尖,牆上一面金色指針的時鐘,旁邊靠著一座圓形的小角樓。
+
+![教堂的紅磚方塔和時鐘。](p-usedom-tower.jpg "教堂的紅磚方塔和時鐘。")
+
 下午四點,回到波蘭,到 Świnoujście。
 
 ## 5/10–5/11:Świnoujście 和 Międzyzdroje
 
-5/10 只騎 19.1 公里到 Międzyzdroje。中午,松林裡的沙土路,兩邊都是筆直的松樹。
+5/10 只騎 19.1 公里到 Międzyzdroje。早上十點多,碼頭邊停著一艘白色的渡輪,船身寫著 Świnoujście,船尾的跳板還翹著。
+
+![碼頭邊寫著 Świnoujście 的渡輪。](p-swina-ferry.jpg "碼頭邊寫著 Świnoujście 的渡輪。")
+
+十一點多,車站前的石板廣場,兩個人牽著城市車等過馬路,後面是一座紅磚底、木造頂的水塔。
+
+![車站前,兩個人牽著車等過馬路,後面是水塔。](p-old-couple.jpg "車站前,兩個人牽著車等過馬路,後面是水塔。")
+
+中午,松林裡的沙土路,兩邊都是筆直的松樹。
 
 ![松林裡的沙土路。](p-pine-track.jpg "松林裡的沙土路。")
 
@@ -113,9 +138,17 @@ heroStyle: "background"
 
 ![松林裡的裝甲車。](p-armoured-car.jpg "松林裡的裝甲車。")
 
+旁邊還有一台迷彩的軍用卡車,擋風玻璃蒙著灰,掛著波蘭車牌。
+
+![迷彩的軍用卡車。](p-army-truck.jpg "迷彩的軍用卡車。")
+
 5/11 下午騎回 Świnoujście,17.9 公里。海邊的松林裡一條沙路,右手邊就是波羅的海。
 
 ![海邊松林裡的沙路,右邊是波羅的海。](p-coast-path.jpg "海邊松林裡的沙路,右邊是波羅的海。")
+
+三點半,松林裡的一張木頭長椅,車靠在椅背後面;旁邊的松樹上釘著一個小小的神龕,掛著紅白的彩帶。
+
+![松林裡的長椅,樹上釘著小神龕。](p-forest-bench.jpg "松林裡的長椅,樹上釘著小神龕。")
 
 {{< iframe src="map.html" height="420" >}}
 

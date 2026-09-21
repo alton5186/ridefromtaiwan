@@ -18,6 +18,7 @@ heroStyle: "background"
 |---|---|
 | 日期 | 2025/5/3–5/5 |
 | GPX | {{< gpx note="3 天騎乘軌跡,火車段已去掉" >}} |
+| Komoot | 5/3 [①](https://www.komoot.com/tour/2217168971) [②](https://www.komoot.com/tour/2215079896)|5/4 [①](https://www.komoot.com/tour/2217636689) [②](https://www.komoot.com/tour/2220173093) [③](https://www.komoot.com/tour/2219870571)|5/5 [①](https://www.komoot.com/tour/2220173284) |
 | 路線 | Losser(荷德邊界)→ Rheine 一帶 → Ibbenbüren 一帶 → Osnabrück ‖ 火車 ‖ 漢堡(Hamburg)市區 → Ahrensburg 附近 → 呂北克(Lübeck)西郊 |
 | 距離 | 3 天 165 km(GPS:82.0 / 33.4 / 49.7 km) |
 | 交通 | 5/4 早上 08:23 從 Osnabrück 搭 DB 火車,10:14 到漢堡(57.98 EUR);其餘騎車 |
