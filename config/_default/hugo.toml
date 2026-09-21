@@ -1,0 +1,43 @@
+# Ride from Taiwan — 站台設定
+theme = "blowfish"
+baseURL = "https://example.org/"   # 上線前換成 GitHub Pages 或自己的網域
+defaultContentLanguage = "zh-tw"
+enableRobotsTXT = true
+summaryLength = 40
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 12
+
+[imaging]
+  anchor = 'Center'
+  quality = 82
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  threshold = 0
+  toLower = false
+  [[related.indices]]
+    name = "series"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 50

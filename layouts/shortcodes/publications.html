@@ -1,0 +1,20 @@
+{{/* 讀 data/publications.yaml(由 travel/records/publications.csv 匯出)列成表 */}}
+{{ $rows := site.Data.publications }}
+{{ if $rows }}
+<table>
+  <thead><tr><th>日期</th><th>作品</th><th>類型</th><th>平台</th><th>連結</th></tr></thead>
+  <tbody>
+  {{ range sort $rows "date" "desc" }}
+    <tr>
+      <td>{{ .date }}</td>
+      <td>{{ .title }}</td>
+      <td>{{ .type }}</td>
+      <td>{{ .platform }}</td>
+      <td>{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">開啟</a>{{ end }}</td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+{{ else }}
+<p><em>尚無紀錄。</em></p>
+{{ end }}

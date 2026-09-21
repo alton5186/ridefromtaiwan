@@ -1,0 +1,23 @@
+disabled = false
+locale = "zh-TW"
+label = "繁體中文"
+weight = 1
+title = "Ride from Taiwan"
+
+[params]
+  displayName = "繁中"
+  isoCode = "zh-TW"
+  rtl = false
+  dateFormat = "2006 年 1 月 2 日"
+  logo = "img/logo.svg"
+  description = "騎單車看世界。每一趟旅程都留下路線、里程、照片與文字。"
+  copyright = "© Ride from Taiwan. All rights reserved."
+
+[params.author]
+  name = "Ride from Taiwan"     # 署名(他 09-21 定 logo 同名)
+  headline = "騎單車看世界"
+  bio = "用單車和背包,一段一段地看世界。這裡記每一段路:從哪裡到哪裡、幾公里、幾天、路上的照片和幾句話。"
+  image = "img/logo.svg"
+  links = [
+    { flickr = "https://www.flickr.com/photos/ridefromtaiwan/" },
+  ]

@@ -1,0 +1,56 @@
+[[main]]
+  name = "旅程"
+  pageRef = "journeys"
+  weight = 10
+
+[[main]]
+  name = "計畫"
+  pageRef = "plans"
+  weight = 20
+
+[[main]]
+  name = "筆記"
+  weight = 30
+
+[[main]]
+  name = "裝備與小工具"
+  parent = "筆記"
+  pageRef = "gear"
+  weight = 31
+
+[[main]]
+  name = "旅遊英文"
+  parent = "筆記"
+  pageRef = "english"
+  weight = 32
+
+[[main]]
+  name = "連結"
+  parent = "筆記"
+  pageRef = "links"
+  weight = 33
+
+[[main]]
+  name = "攝影"
+  pageRef = "gallery"
+  weight = 40
+
+[[main]]
+  name = "關於"
+  pageRef = "about"
+  weight = 50
+
+[[main]]
+  name = "刊登紀錄"
+  pageRef = "publications"
+  weight = 60
+
+[[footer]]
+  name = "系列"
+  pageRef = "series"
+  weight = 10
+
+[[footer]]
+  name = "標籤"
+  pageRef = "tags"
+  weight = 20

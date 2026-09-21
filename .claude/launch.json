@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "C:\\Users\\laial\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe\\hugo.exe",
+      "runtimeArgs": ["server", "-D", "-p", "1313", "--bind", "127.0.0.1", "-s", "C:\\MyDoc\\claude\\travel\\site"],
+      "port": 1313
+    }
+  ]
+}

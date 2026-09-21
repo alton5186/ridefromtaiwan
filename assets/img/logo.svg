@@ -1,0 +1,16 @@
+<svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg" role="img"><title>RIDE FROM TAIWAN icon</title>
+<rect width="512" height="512" rx="96" fill="#f7f6f1"/>
+<g transform="translate(-92 40) scale(0.9)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60 344 C 180 326, 260 360, 400 336 S 580 326, 650 342" stroke-width="4" stroke="#9c998f"/>
+<circle cx="228" cy="272" r="58" stroke-width="9"/>
+<circle cx="478" cy="272" r="58" stroke-width="9"/>
+<path d="M228 272 L326 182 L428 182 L478 272 M326 182 L356 272 L228 272 M356 272 L428 182" stroke-width="8"/>
+<path d="M326 182 L320 160" stroke-width="9"/>
+<path d="M428 182 L436 156 L460 150" stroke-width="8"/>
+<path d="M322 166 C 326 130, 334 106, 342 88" stroke-width="15"/>
+<path d="M342 90 C 380 108, 420 132, 456 152" stroke-width="10"/>
+<path d="M322 166 C 334 200, 366 232, 356 268" stroke-width="13"/>
+</g>
+<circle cx="221" cy="94" r="20" fill="#1a1a1a"/>
+<g transform="translate(-92 40) scale(0.9)" fill="#1a1a1a"><rect x="182" y="210" width="34" height="34" rx="6"/><rect x="176" y="214" width="46" height="6" rx="3"/></g>
+</svg>

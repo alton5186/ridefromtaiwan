@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 470" width="1440" height="940" xmlns="http://www.w3.org/2000/svg" role="img"><title>RIDE FROM TAIWAN</title>
+<rect x="0" y="0" width="720" height="470" rx="18" fill="#f7f6f1"/>
+<g fill="none" stroke="#c9c6bb" stroke-width="1.2" stroke-dasharray="4 6">
+<ellipse cx="360" cy="225" rx="330" ry="150"/>
+<path d="M60 160 Q360 120 660 160"/><path d="M60 290 Q360 330 660 290"/>
+<line x1="360" y1="80" x2="360" y2="370"/>
+</g>
+<g fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+<path d="M30 318 C 150 296, 230 342, 360 312 S 560 296, 690 318" stroke-width="3" stroke="#6b6860"/>
+<path d="M60 344 C 180 326, 260 360, 400 336 S 580 326, 650 342" stroke-width="2" stroke="#9c998f"/>
+<circle cx="228" cy="272" r="58" stroke-width="7"/>
+<circle cx="478" cy="272" r="58" stroke-width="7"/>
+<path d="M228 272 L326 182 L428 182 L478 272 M326 182 L356 272 L228 272 M356 272 L428 182" stroke-width="6"/>
+<path d="M326 182 L320 160" stroke-width="7"/>
+<path d="M428 182 L436 156 L460 150" stroke-width="6"/>
+<path d="M322 166 C 326 130, 334 106, 342 88" stroke-width="12"/>
+<path d="M342 90 C 380 108, 420 132, 456 152" stroke-width="8"/>
+<path d="M322 166 C 334 200, 366 232, 356 268" stroke-width="10"/>
+<path d="M480 166 C 560 150, 640 168, 700 150" stroke-width="3" stroke="#6b6860"/>
+</g>
+<circle cx="348" cy="60" r="17" fill="#1a1a1a"/>
+<g fill="#1a1a1a"><rect x="182" y="210" width="34" height="34" rx="6"/><rect x="176" y="214" width="46" height="6" rx="3"/></g>
+<text x="360" y="412" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="7" fill="#1a1a1a">RIDE FROM TAIWAN</text>
+<text x="360" y="444" text-anchor="middle" font-family="Georgia, 'Noto Serif', serif" font-size="17" font-style="italic" letter-spacing="4" fill="#6b6860">around the world</text>
+</svg>

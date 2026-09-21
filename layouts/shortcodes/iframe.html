@@ -1,0 +1,6 @@
+{{- /* 嵌入本站 static/ 下的 HTML(路線圖等):{{< iframe src="/maps/xxx.html" height="420" >}} */ -}}
+{{- $src := .Get "src" -}}
+{{- if not (hasPrefix $src "/") -}}{{- $src = printf "/maps/%s.html" (path.Base .Page.File.Dir) -}}{{- end -}}
+<div class="not-prose my-6 rounded-lg overflow-hidden border border-neutral-200 dark:border-neutral-700">
+  <iframe src="{{ $src | relURL }}" loading="lazy" style="width:100%;height:{{ .Get "height" | default "420" }}px;border:0;display:block" title="{{ .Get "title" | default "路線圖" }}"></iframe>
+</div>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1be7b9acb9fe54ef0e9616e909a4d10d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h3 style='position:fixed;top:8px;left:60px;z-index:9999;background:#fff;padding:4px 10px;border-radius:6px;font-family:sans-serif'>3-玻利維亞Uyuni鹽湖</h3>
+    
+            <div class="folium-map" id="map_1be7b9acb9fe54ef0e9616e909a4d10d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1be7b9acb9fe54ef0e9616e909a4d10d = L.map(
+                "map_1be7b9acb9fe54ef0e9616e909a4d10d",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+
+            
+
+        
+    
+            var tile_layer_74e02b33a2abb9f9b9a5247fecd9329c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_74e02b33a2abb9f9b9a5247fecd9329c.addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            var poly_line_e2759ed7b23a06a0de9d30659b44f2e7 = L.polyline(
+                [[-20.445525, -66.843467], [-20.463214, -66.822839], [-20.481372, -66.838469], [-20.476642, -66.837089], [-20.469683, -66.833594], [-20.429083, -66.846292], [-20.392089, -66.876503], [-20.302625, -66.938111], [-20.316311, -66.983292], [-20.316097, -66.987472], [-20.3151, -66.993933], [-20.314433, -66.998383], [-20.311236, -67.020753], [-20.237567, -67.616425], [-20.239236, -67.619269], [-20.240672, -67.621833], [-20.241317, -67.626847], [-20.237861, -67.625428], [-20.242686, -67.625808], [-20.330283, -67.047189], [-20.391206, -66.987175], [-20.481964, -66.838333], [-20.237428, -67.615814], [-20.242628, -67.625886], [-20.391317, -66.987319], [-20.391372, -66.987311]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            poly_line_e2759ed7b23a06a0de9d30659b44f2e7.bindTooltip(
+                `<div>
+                     2026-06-20 · 3-玻利維亞Uyuni鹽湖
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7aac4a596d21ab69a404d3acfd1d347e = L.circleMarker(
+                [-16.508719, -68.176558],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_7aac4a596d21ab69a404d3acfd1d347e.bindTooltip(
+                `<div>
+                     2026-06-20 · 3-玻利維亞Uyuni鹽湖 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d529095926e746e3c28c0eba58896d1b = L.circleMarker(
+                [-20.481964, -66.838333],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_d529095926e746e3c28c0eba58896d1b.bindTooltip(
+                `<div>
+                     作品 #999 11:34 火車墳場
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a242fa07c7d5e9ed38f698275d0133f0 = L.circleMarker(
+                [-20.237428, -67.615814],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_a242fa07c7d5e9ed38f698275d0133f0.bindTooltip(
+                `<div>
+                     作品 #1087 14:18 鹽湖上的酒瓶
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_705d8dd4822708d75573f32d08ce16f6 = L.circleMarker(
+                [-20.242628, -67.625886],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_705d8dd4822708d75573f32d08ce16f6.bindTooltip(
+                `<div>
+                     作品 #1173 16:28 仙人掌島
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3957c85f3caefc319882e8992c4aef8 = L.circleMarker(
+                [-20.391317, -66.987319],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_a3957c85f3caefc319882e8992c4aef8.bindTooltip(
+                `<div>
+                     作品 #1243 17:59 鹽湖倒影,四人與車
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b48b02cafa3b2933e7411346bcf2d6a = L.circleMarker(
+                [-20.391372, -66.987311],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            circle_marker_2b48b02cafa3b2933e7411346bcf2d6a.bindTooltip(
+                `<div>
+                     作品 #1257 18:02 鹽湖日落
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_1be7b9acb9fe54ef0e9616e909a4d10d.fitBounds(
+                [[-20.481964, -68.176558], [-16.508719, -66.822839]],
+                {}
+            );
+        
+    
+            var marker_51949c0b12b14a264acba7aeaa9d29f7 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_1be7b9acb9fe54ef0e9616e909a4d10d);
+        
+    
+            var div_icon_882d5cf33e51986a31a4788034180d13 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+        
+    
+                marker_51949c0b12b14a264acba7aeaa9d29f7.setIcon(div_icon_882d5cf33e51986a31a4788034180d13);
+            
+</script>
+</html>

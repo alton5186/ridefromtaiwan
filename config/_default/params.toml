@@ -1,0 +1,108 @@
+# Blowfish 參數 — 旅遊雜誌質感:大封面、卡片、深色可切換
+colorScheme = "ocean"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = false
+enableStructuredBreadcrumbs = false
+replyByEmail = false
+
+mainSections = ["journeys", "plans", "gear", "english"]
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+defaultBackgroundImage = "img/home-bg.jpg"
+defaultFeaturedImage = "img/home-bg.jpg"
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+fingerprintAlgorithm = "sha512"
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "background"
+  homepageImage = "img/home-bg.jpg"
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/journeys/"
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false
+
+[article]
+  showDate = true
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  seriesOpened = true
+  showHeadingAnchors = false
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showReadingProgress = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showCategories = true
+  showTags = true
+  showWordCount = false
+  showZenMode = false
+
+[list]
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showCards = true
+  orderByWeight = false
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+  showHero = false
+  showBreadcrumbs = false
+  showTableOfContents = false
+  cardView = true
+
+[term]
+  showHero = false
+  showBreadcrumbs = false
+  showTableOfContents = false
+  groupByYear = true
+  cardView = true
+
+[firebase]
+[fathomAnalytics]
+[umamiAnalytics]
+[selineAnalytics]
+[buymeacoffee]
+[verification]
+[rssnext]

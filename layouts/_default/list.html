@@ -1,0 +1,56 @@
+{{ define "main" }}
+{{/* 所有列表頁共用:左=目錄(依年份,計畫另標狀態),右=最近更新的卡片。他 09-21 畫的版面。 */}}
+{{ .Scratch.Set "scope" "list" }}
+{{ if site.Params.list.showHero | default false }}
+  {{ $heroStyle := print "hero/" site.Params.list.heroStyle ".html" }}
+  {{ if templates.Exists ( printf "partials/%s" $heroStyle ) }}{{ partial $heroStyle . }}{{ else }}{{ partial "hero/basic.html" . }}{{ end }}
+{{ end }}
+<header>
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400">{{ .Description }}</div>
+</header>
+{{ $pages := .Pages.ByDate.Reverse }}
+<div class="flex flex-col lg:flex-row gap-10">
+  {{/* 左:目錄 */}}
+  <aside class="lg:w-72 shrink-0">
+    <div class="lg:sticky lg:top-28">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">全部{{ .Title }}</h2>
+      {{ range $pages.GroupByDate "2006" }}
+        <div class="mb-4">
+          <div class="text-lg font-bold text-neutral-700 dark:text-neutral-300">{{ .Key }}</div>
+          <ul class="mt-1 space-y-1 border-s border-neutral-300 dark:border-neutral-700 ps-3">
+            {{ range .Pages }}
+              <li class="text-sm leading-snug"><a class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ with .Params.plan_status }}<span class="ms-1 rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
+                <span class="text-xs text-neutral-400">{{ .Date.Format "1/2" }}</span></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+      {{ if eq .Section "plans" }}{{ with site.Data.dreams }}
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2">夢想清單</h2>
+        <ul class="space-y-1.5 ps-3 border-s border-neutral-300 dark:border-neutral-700">
+          {{ range . }}<li class="text-sm leading-snug">{{ if .url }}<a class="hover:text-primary-600" href="{{ .url }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+            {{ with .status }}<span class="ms-1 rounded px-1.5 py-0.5 text-[11px] {{ if eq . "已出發" }}bg-green-600/20 text-green-300{{ else if eq . "規劃中" }}bg-amber-500/20 text-amber-300{{ else }}bg-neutral-500/20 text-neutral-300{{ end }}">{{ . }}</span>{{ end }}
+            {{ with .note }}<div class="text-xs text-neutral-400">{{ . }}</div>{{ end }}</li>{{ end }}
+        </ul>
+      {{ end }}{{ end }}
+      {{ if eq .Section "journeys" }}{{ with site.Taxonomies.series }}
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2">系列</h2>
+        <ul class="space-y-1 ps-3 border-s border-neutral-300 dark:border-neutral-700">
+          {{ range . }}<li class="text-sm"><a class="hover:text-primary-600" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="text-xs text-neutral-400">{{ .Count }}</span></li>{{ end }}
+        </ul>
+      {{ end }}{{ end }}
+    </div>
+  </aside>
+  {{/* 右:最近更新 */}}
+  <section class="grow min-w-0">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">最近更新</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range first 12 ($pages.ByLastmod.Reverse) }}
+        {{ partial "article-link/card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

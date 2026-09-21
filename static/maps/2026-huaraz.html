@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_822d2d28b76c5c7273248623c3536f61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h3 style='position:fixed;top:8px;left:60px;z-index:9999;background:#fff;padding:4px 10px;border-radius:6px;font-family:sans-serif'>2-Huaraz白山脈</h3>
+    
+            <div class="folium-map" id="map_822d2d28b76c5c7273248623c3536f61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_822d2d28b76c5c7273248623c3536f61 = L.map(
+                "map_822d2d28b76c5c7273248623c3536f61",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_822d2d28b76c5c7273248623c3536f61);
+
+            
+
+        
+    
+            var tile_layer_a21e4671c96308f92513601d429cad00 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a21e4671c96308f92513601d429cad00.addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            var poly_line_8521301ff47de6fa159dd69a28d999a9 = L.polyline(
+                [[-12.022267, -77.104867], [-12.030506, -77.115997], [-12.027444, -77.117569]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_8521301ff47de6fa159dd69a28d999a9.bindTooltip(
+                `<div>
+                     2026-06-13 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_732a80b9de5049e8b6fb1f2258bb933c = L.polyline(
+                [[-9.348322, -77.599358], [-9.485297, -77.536767], [-9.53125, -77.523742], [-9.531514, -77.526581], [-9.530589, -77.529281], [-9.527097, -77.530128], [-9.530383, -77.529275], [-9.535858, -77.514922]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_732a80b9de5049e8b6fb1f2258bb933c.bindTooltip(
+                `<div>
+                     2026-06-13 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ee39be114adb44580af720bc11f777d = L.circleMarker(
+                [-12.022267, -77.104867],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_8ee39be114adb44580af720bc11f777d.bindTooltip(
+                `<div>
+                     2026-06-13 · 2-Huaraz白山脈 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3ffe5e77dce3c47790ea977576ff2585 = L.polyline(
+                [[-9.037667, -77.753625], [-9.00025, -77.684647], [-9.000625, -77.681756], [-8.999194, -77.684647], [-9.527903, -77.528922]],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f77b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_3ffe5e77dce3c47790ea977576ff2585.bindTooltip(
+                `<div>
+                     2026-06-14 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56409c7e57e0977d14fa5e2d208939d3 = L.circleMarker(
+                [-9.037667, -77.753625],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_56409c7e57e0977d14fa5e2d208939d3.bindTooltip(
+                `<div>
+                     2026-06-14 · 2-Huaraz白山脈 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3f0f417f55259447172f0864f9f6aef0 = L.polyline(
+                [[-9.341247, -77.544586], [-9.344564, -77.543533], [-9.344592, -77.520203], [-9.328989, -77.4907], [-9.321694, -77.477478], [-9.292386, -77.465553], [-9.293833, -77.462753], [-9.290733, -77.460883], [-9.286656, -77.452919], [-9.283739, -77.451317], [-9.280797, -77.450547], [-9.278036, -77.451211], [-9.285172, -77.452339], [-9.286953, -77.458764], [-9.294331, -77.463417], [-9.292525, -77.465636], [-9.328117, -77.490653], [-9.519572, -77.53295], [-9.528797, -77.528953], [-9.280022, -77.450919]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_3f0f417f55259447172f0864f9f6aef0.bindTooltip(
+                `<div>
+                     2026-06-15 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abe013db806d6196247492b137c317e0 = L.circleMarker(
+                [-9.341247, -77.544586],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_abe013db806d6196247492b137c317e0.bindTooltip(
+                `<div>
+                     2026-06-15 · 2-Huaraz白山脈 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cabe388946b096ca0b4c28e8159d406b = L.polyline(
+                [[-9.127994, -77.514817], [-9.127294, -77.512178], [-9.128658, -77.509528], [-9.128061, -77.515097], [-9.531806, -77.525719], [-9.129261, -77.508628]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_cabe388946b096ca0b4c28e8159d406b.bindTooltip(
+                `<div>
+                     2026-06-16 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a78f12fd189e5d380038159dfd8f7cb = L.circleMarker(
+                [-9.127994, -77.514817],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_6a78f12fd189e5d380038159dfd8f7cb.bindTooltip(
+                `<div>
+                     2026-06-16 · 2-Huaraz白山脈 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_13e45a586220962930b093664b138099 = L.polyline(
+                [[-9.889108, -77.3086], [-9.887508, -77.299583], [-9.881481, -77.287758], [-9.879569, -77.270844], [-9.899458, -77.185364], [-9.902417, -77.184508], [-9.914289, -77.184342], [-9.911467, -77.184625], [-9.907839, -77.184319], [-9.898417, -77.184114], [-9.755786, -77.444022], [-9.529578, -77.527686], [-9.526578, -77.528044], [-9.519844, -77.531861], [-9.879997, -77.269508]],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9467bd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            poly_line_13e45a586220962930b093664b138099.bindTooltip(
+                `<div>
+                     2026-06-17 · 2-Huaraz白山脈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_465570962d9a3ec3a0cdd73de04752df = L.circleMarker(
+                [-9.889108, -77.3086],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_465570962d9a3ec3a0cdd73de04752df.bindTooltip(
+                `<div>
+                     2026-06-17 · 2-Huaraz白山脈 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebe56054e33a8fa5f2c45d913d8f10b8 = L.circleMarker(
+                [-9.280022, -77.450919],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_ebe56054e33a8fa5f2c45d913d8f10b8.bindTooltip(
+                `<div>
+                     作品 #322 13:22 瓦拉斯的石堆與湖
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5af967469de6963e85c94f65e12fa26e = L.circleMarker(
+                [-9.129261, -77.508628],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_5af967469de6963e85c94f65e12fa26e.bindTooltip(
+                `<div>
+                     作品 #494 08:19 白山脈的登山者
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7ab3927bc46e1555c4f63e94ba09174 = L.circleMarker(
+                [-9.879997, -77.269508],
+                {"bubblingMouseEvents": true, "color": "#000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            circle_marker_f7ab3927bc46e1555c4f63e94ba09174.bindTooltip(
+                `<div>
+                     作品 #584 12:02 安地斯巨鳳梨
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_822d2d28b76c5c7273248623c3536f61.fitBounds(
+                [[-12.030506, -77.753625], [-8.999194, -77.104867]],
+                {}
+            );
+        
+    
+            var marker_7a30850e60f5e749281d5b42d6abc288 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_822d2d28b76c5c7273248623c3536f61);
+        
+    
+            var div_icon_61a287a99862e9602362184f4754ff4b = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+        
+    
+                marker_7a30850e60f5e749281d5b42d6abc288.setIcon(div_icon_61a287a99862e9602362184f4754ff4b);
+            
+</script>
+</html>
