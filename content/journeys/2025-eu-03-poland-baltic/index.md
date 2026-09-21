@@ -126,9 +126,6 @@ heroStyle: "background"
 
 ![碼頭邊寫著 Świnoujście 的渡輪。](p-swina-ferry.jpg "碼頭邊寫著 Świnoujście 的渡輪。")
 
-十一點多,車站前的石板廣場,兩個人牽著城市車等過馬路,後面是一座紅磚底、木造頂的水塔。
-
-
 中午,松林裡的沙土路,兩邊都是筆直的松樹。
 
 ![松林裡的沙土路。](p-pine-track.jpg "松林裡的沙土路。")
