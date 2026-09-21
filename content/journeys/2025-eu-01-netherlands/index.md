@@ -1,8 +1,8 @@
 ---
-title: "Schiphol 出關就上路:荷蘭三天,223 公里"
+title: "2025 歐洲十國——第一站 荷蘭"
 date: 2025-05-02
-description: "紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4。"
-summary: "紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4。"
+description: "Schiphol 出關就上路:紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4,三天 223 公里。"
+summary: "Schiphol 出關就上路:紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4,三天 223 公里。"
 tags: ["荷蘭", "LF4", "Schiphol", "單車旅行", "露營"]
 series: ["2025 歐洲十國單車"]
 series_order: 1
@@ -10,7 +10,7 @@ showHero: true
 heroStyle: "background"
 ---
 
-<small>歐洲十國單車・第 1 段|荷蘭(4/30–5/2)|下一段:德國北部</small>
+<small>4/30–5/2・223 km|下一站:德國北部</small>
 
 | | |
 |---|---|
