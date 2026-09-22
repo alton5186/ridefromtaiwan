@@ -58,6 +58,10 @@ heroStyle: "background"
 
 5/4 早上 08:23 的 DB 火車,10:14 到漢堡。GPS 是十點半從漢堡市區開始記的,這天只騎了 33.4 公里,都在市區裡繞。
 
+八點多,Osnabrück 車站的月台。車靠在柱子旁,對面停著一列藍黃色的 eurobahn 區間車。
+
+![5/4 早上,Osnabrück 月台,對面是 eurobahn 的區間車。](p-osnabrueck-platform.jpg "5/4 早上,Osnabrück 月台,對面是 eurobahn 的區間車。")
+
 天陰。十一點多在 Chilehaus——深褐色的磚牆,尖尖的一角像船頭一樣切進街口。這棟樓 1924 年落成,是表現主義磚造建築的代表作;出錢蓋它的商人靠智利的硝石貿易發財,所以叫「智利之家」。現在它和倉庫城一起列在世界遺產裡。
 
 ![Chilehaus,尖角像船頭。](p-chilehaus.jpg "Chilehaus,尖角像船頭。")
