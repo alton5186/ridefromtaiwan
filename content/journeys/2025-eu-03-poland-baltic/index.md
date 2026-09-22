@@ -24,7 +24,7 @@ EuroVelo 是橫跨全歐的長途自行車道網,EV10 繞波羅的海一整圈,�
 | 路線 | Lübeck ‖ 火車 ‖ 什切青(Szczecin)→ 跨回德國,Rieth → Ueckermünde → Usedom → 回波蘭 Świnoujście → Międzyzdroje → Świnoujście ‖ 夜船 ‖ Trelleborg(瑞典) |
 | 距離 | 4 天 161 km(GPS:64.4 / 59.3 / 19.1 / 17.9 km);5/6、5/7 沒有騎乘紀錄 |
 | 交通 | 5/6 Lübeck → Szczecin 約 250 km,搭火車;5/11 晚上 TT-Line 夜船 Świnoujście → Trelleborg |
-| 住宿 | 5/6、5/7 什切青市中心(Monte Cassino 街一帶)<br>5/8 Pension und Ferienwohnungen am Rosengarten(Ueckermünde)<br>5/9 Świnoujście 的私人公寓(鑰匙留在門口密碼盒,自助入住)<br>5/10 Międzyzdroje 的民宿<br>5/11 TT-Line 夜船(沒訂艙房,睡休息區) |
+| 住宿 | 5/6、5/7 什切青市中心公寓(Monte Cassino 9)<br>5/8 Pension und Ferienwohnungen am Rosengarten(Ueckermünde)<br>5/9 Świnoujście 的私人公寓(鑰匙留在門口密碼盒,自助入住)<br>5/10 Międzyzdroje 的民宿<br>5/11 TT-Line 夜船(沒訂艙房,睡休息區) |
 
 ## 5/6–5/7:火車到什切青
 
