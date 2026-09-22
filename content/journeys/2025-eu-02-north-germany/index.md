@@ -24,7 +24,7 @@ heroStyle: "background"
 | 交通 | 5/4 早上 08:23 從 Osnabrück 搭 DB 火車,10:14 到漢堡(57.98 EUR);其餘騎車 |
 | 住宿 | 5/3 Osnabrück 的 ibis budget;5/4、5/5 帳篷,營地 |
 
-## 第一天:過邊界,82 公里到 Osnabrück
+## 5/3:過邊界,82 公里到 Osnabrück
 
 5/3 早上十點多,從 Losser 跨過荷德邊界。申根區的邊界沒有關卡,一條路騎過去,就是德國了。
 
@@ -54,7 +54,7 @@ heroStyle: "background"
 
 傍晚快六點,停在 Osnabrück 車站旁。Osnabrück 是 1648 年簽西發里亞和約的城市之一——三十年戰爭就是在這裡和 Münster 畫下句點。這一晚住車站附近的 ibis budget,不搭帳篷;明天一早的火車,就在隔壁。
 
-## 第二天:火車到漢堡
+## 5/4:火車到漢堡
 
 5/4 早上 08:23 的 DB 火車,10:14 到漢堡。GPS 是十點半從漢堡市區開始記的,這天只騎了 33.4 公里,都在市區裡繞。
 
@@ -78,7 +78,7 @@ heroStyle: "background"
 
 ![Ahrensburg 附近的營地。](p-camp-ahrensburg.jpg "Ahrensburg 附近的營地。")
 
-## 第三天:露水結冰
+## 5/5:露水結冰
 
 5/5 早上七點,在營地的野餐桌上用爐子煮早餐。
 
@@ -100,7 +100,7 @@ heroStyle: "background"
 
 {{< iframe src="map.html" height="420" >}}
 
-## 沒有往北
+## 5/6:沒有往北
 
 原本的計畫是 5/6 從這裡騎 77 公里往北到 Lutjenbrode,再到 Puttgarden 搭渡輪去丹麥。Puttgarden 到丹麥 Rødby 這條渡輪線,德國人叫它「候鳥線」,是從德國過海去北歐的老航線。
 
