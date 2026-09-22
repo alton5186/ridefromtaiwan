@@ -164,6 +164,10 @@ Christiansborg 宮旁邊的馬場,一輛黑色的馬車,兩匹白馬。
 
 ![Aker Brygge 的遊艇,對岸是 Akershus 要塞。](p-akershus-yachts.jpg "Aker Brygge 的遊艇,對岸是 Akershus 要塞。")
 
+在碼頭邊坐下來,車就靠在欄杆上。對面整排遊艇,再過去是 Akershus 要塞的城牆。
+
+![碼頭邊坐一會,車靠在欄杆上。](p-aker-brygge-sit.jpg "碼頭邊坐一會,車靠在欄杆上。")
+
 港裡靠著幾艘雙桅的帆船,天上的雲一團一團。
 
 ![港裡的雙桅帆船,雲一團一團。](p-oslo-tall-ships.jpg "港裡的雙桅帆船,雲一團一團。")

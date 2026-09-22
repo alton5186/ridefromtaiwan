@@ -66,6 +66,10 @@ heroStyle: "background"
 
 ![騎過 Chilehaus 前,尖角像船頭。](p-chilehaus.jpg "騎過 Chilehaus 前,尖角像船頭。")
 
+從街口退開一點看,那個尖角就像一艘船的船首,硬生生切進兩條街之間。
+
+![Chilehaus 的尖角,像船首切進街口。](p-chilehaus-wide.jpg "Chilehaus 的尖角,像船首切進街口。")
+
 再往前是倉庫城(Speicherstadt)。紅磚倉庫一棟接一棟,綠色的銅屋頂,前面一座黑色的鐵橋跨過運河。這是世界上最大的倉庫區,十九世紀末建在橡木樁上;當年整區是免稅港,咖啡、香料、地毯就堆在這些磚樓裡。
 
 ![倉庫城 Speicherstadt,紅磚倉庫和鐵橋。](p-speicherstadt.jpg "倉庫城 Speicherstadt,紅磚倉庫和鐵橋。")
@@ -90,6 +94,10 @@ heroStyle: "background"
 
 ![早上七點,桌面上的露水結成冰,爐子上煮早餐。](p-frost-breakfast.jpg "早上七點,桌面上的露水結成冰,爐子上煮早餐。")
 
+中午路邊停了一下:一座紅色的自助修車站,打氣筒、各式工具用鋼索掛著,誰都可以用。德國的自行車道上常看到這種東西。
+
+![路邊的自助修車站,工具用鋼索掛著。](p-repair-station.jpg "路邊的自助修車站,工具用鋼索掛著。")
+
 九點半拔營出發,往 Lübeck 方向。這一天 49.7 公里、爬升 238 公尺。先是一段林道。
 
 ![往 Lübeck 的林道。](p-forest-track.jpg "往 Lübeck 的林道。")
@@ -101,6 +109,8 @@ heroStyle: "background"
 傍晚六點,到 Lübeck 西邊、Stockelsdorf 的營地。天晴,帳篷搭在草地上,車靠著野餐桌,馱包和安全帽攤在桌上。Lübeck 是老漢薩同盟的首府,紅磚哥德式的老城是世界遺產;這一趟,只停在它的西郊。
 
 ![傍晚的營地,帳篷、車、攤在桌上的馱包。](p-camp-luebeck.jpg "傍晚的營地,帳篷、車、攤在桌上的馱包。")
+
+![營地的另一頭:車靠著野餐桌,四個馱包全卸下來。](p-camp-luebeck2.jpg "營地的另一頭:車靠著野餐桌,四個馱包全卸下來。")
 
 {{< iframe src="map.html" height="420" >}}
 
