@@ -22,7 +22,7 @@ heroStyle: "background"
 | 路線 | Trelleborg(瑞典)→ 馬爾默(Malmö)‖ 火車過 Øresund 橋 ‖ 哥本哈根(Copenhagen)‖ DFDS 郵輪 ‖ 奧斯陸(Oslo) |
 | 距離 | 5 天 81 km(GPS:35.3 / 8.3 / 10.2 / 15.7 / 11.4 km) |
 | 交通 | 5/11 晚 TT-Line 夜船 Świnoujście → Trelleborg,5/12 早上到;5/13 Malmö → Copenhagen 應該是火車過 Øresund 橋;5/14 16:30 DFDS 郵輪 Copenhagen → Oslo,17 小時 30 分,5/15 10:00 到 |
-| 住宿 | 5/12 Malmö 青年旅舍;5/13 哥本哈根港邊的青年旅舍;5/14 DFDS 船上 |
+| 住宿 | 5/12 Hotel N' Hostel(Malmö)<br>5/13 Danhostel Copenhagen City(Langebro 橋旁)<br>5/14 DFDS 船上<br>5/15、5/16 奧斯陸中央車站附近 |
 
 ## 5/12:Trelleborg 上岸,騎到 Malmö
 
@@ -103,6 +103,12 @@ Nyhavn。17 世紀挖的運河,兩岸的彩色房子、老帆船、露天座位;
 八點多,天還亮著,中央車站前。1911 年的紅磚站房。
 
 ![晚上八點多的中央車站,天還亮著。](p-central-station.jpg "晚上八點多的中央車站,天還亮著。")
+
+### 住哪裡:Danhostel Copenhagen City
+
+哥本哈根這一晚住 Langebro 橋旁那棟十六層的 Danhostel Copenhagen City,從房間窗戶就看得到港口和橋。非常滿意:很乾淨,價格也非常超值。
+
+它是在 **Hostelworld** 上訂的——這間在 Agoda、Booking 上其實找不到。北歐城市的青年旅舍,值得多開一個 Hostelworld 來比。
 
 ## 5/14:港邊的木棧道,然後上船
 

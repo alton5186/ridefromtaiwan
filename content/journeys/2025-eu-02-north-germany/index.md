@@ -22,7 +22,7 @@ heroStyle: "background"
 | 路線 | Losser(荷德邊界)→ Rheine 一帶 → Ibbenbüren 一帶 → Osnabrück ‖ 火車 ‖ 漢堡(Hamburg)市區 → Ahrensburg 附近 → 呂北克(Lübeck)西郊 |
 | 距離 | 3 天 165 km(GPS:82.0 / 33.4 / 49.7 km) |
 | 交通 | 5/4 早上 08:23 從 Osnabrück 搭 DB 火車,10:14 到漢堡(57.98 EUR);其餘騎車 |
-| 住宿 | 5/3 Osnabrück 的 ibis budget;5/4、5/5 帳篷,營地 |
+| 住宿 | 5/3 ibis budget Osnabrück City<br>5/4 Campingplatz Bredenbeker Teich(Ahrensburg)<br>5/5 Campingplatz Lübeck-Schönböcken(Stockelsdorf) |
 
 ## 5/3:過邊界,82 公里到 Osnabrück
 
