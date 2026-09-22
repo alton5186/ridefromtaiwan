@@ -1,16 +1,9 @@
-# 夢想清單:一行一條;status 想去 / 規劃中 / 已出發;有文章就填 url。他給清單後替換。
-- name: "Santa Cruz Trek(秘魯 Cordillera Blanca,4 天)"
-  status: "想去"
-  note: "瓦拉斯那篇的結尾:下一次要走的"
-- name: "Huayhuash 環線(秘魯,8–10 天)"
-  status: "想去"
-- name: "土耳其愛琴海岸到希臘:EuroVelo 8 南段 + Kos + 雅典(14 天)"
-  status: "規劃中"
-  url: "/plans/turkey-greece-eurovelo8/"
-  note: "09-14 討論定案方案 A;季節 4–5 月或 9 下旬–10 月"
-- name: "石鹿・羅山林道 中秋單車露營"
-  status: "規劃中"
-  url: "/plans/2026-shilu-luoshan/"
-- name: "羅山・秀巒 四日"
-  status: "規劃中"
-  note: "雲端硬碟 9/10 的版本"
+- name: Santa Cruz Trek(秘魯 Cordillera Blanca,4 天)
+  status: 想去
+  note: 瓦拉斯那篇的結尾:下一次要走的
+- name: Huayhuash 環線(秘魯,8–10 天)
+  status: 想去
+- name: 土耳其愛琴海岸到希臘:EuroVelo 8 南段 + Kos + 雅典(14 天)
+  status: 規劃中
+  url: /plans/turkey-greece-eurovelo8/
+  note: 09-14 討論定案方案 A;季節 4–5 月或 9 下旬–10 月
