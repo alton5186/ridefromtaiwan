@@ -42,7 +42,7 @@
       {{ $enableToc = .Params.showTableOfContents | default $enableToc }}
       {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
       {{ $topClass := cond (or (hasPrefix site.Params.header.layout "fixed") (eq site.Params.header.layout "floating")) "lg:top-[140px]" "lg:top-10" }}
-      {{ if and $showToc (ne .Section "journeys") }}
+      {{ if $showToc }}
         <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
           <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
             {{ partial "toc.html" . }}
@@ -50,15 +50,6 @@
         </div>
       {{ end }}
 
-
-      {{/* 左欄清單(journeys 才顯示):點進文章也留著,方便跳下一站 */}}
-      {{ if eq .Section "journeys" }}
-        <aside class="side-nav order-first not-prose print:hidden">
-          <div class="toc-sticky">
-            {{ partial "toc-nav.html" (dict "sec" "旅程" "pages" (where site.RegularPages "Section" "journeys").ByDate.Reverse "cur" .) }}
-          </div>
-        </aside>
-      {{ end }}
 
       <div class="min-w-0 min-h-0 max-w-fit">
         {{ partial "series/series.html" . }}
