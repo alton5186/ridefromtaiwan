@@ -50,7 +50,6 @@ defaultSocialImage = "img/og-image.jpg"
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = false
-  showHero = false
   heroStyle = "basic"
   layoutBackgroundBlur = false
   layoutBackgroundHeaderSpace = false
