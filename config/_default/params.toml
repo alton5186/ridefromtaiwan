@@ -32,7 +32,7 @@ defaultSocialImage = "img/og-image.jpg"
   showScrollToTop = true
 
 [homepage]
-  layout = "background"
+  layout = "hero"
   homepageImage = "img/home-bg.jpg"
   showRecent = true
   showRecentItems = 6
