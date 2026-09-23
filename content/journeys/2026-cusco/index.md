@@ -147,6 +147,10 @@ heroStyle: "background"
 
 ![祭台上,披紅披風的祭司圍著中間的獻祭。](p-intiraymi-altar.jpg "祭台上,披紅披風的祭司圍著中間的獻祭。")
 
+祭典的規模比想像中大:整片草地上幾百個舞者分成好幾組,橘、紫、桃紅的衣服一隊一隊散開,石牆上是主祭的隊伍,遠處的山坡上還坐滿了人。
+
+![Sacsayhuamán 的草地上,幾百個舞者分成好幾組。](p-intiraymi-field.jpg "Sacsayhuamán 的草地上,幾百個舞者分成好幾組。")
+
 ![戰士之舞。](p-intiraymi-warriors.jpg "戰士之舞。")
 
 ![長矛。](p-intiraymi-spears.jpg "長矛。")
