@@ -17,3 +17,7 @@
 /* 文章頁左欄:桌機固定寬度、手機收在最上面(Blowfish 沒有 lg:w-72 這些 class) */
 .side-nav{width:100%}
 @media (min-width:1024px){ .side-nav{width:18rem;flex:0 0 18rem;padding-inline-end:2rem} }
+
+/* 首頁大圖:主題在暗色模式蓋了兩層深色漸層,照片幾乎看不見 → 調淡(09-23) */
+#background-image ~ div { opacity: .35 !important; }
+#background-image { filter: saturate(1.05) contrast(1.02); }
