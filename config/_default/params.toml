@@ -19,6 +19,8 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = false
 fingerprintAlgorithm = "sha512"
 
+defaultSocialImage = "img/og-image.jpg"
+
 [header]
   layout = "fixed-fill-blur"
 
