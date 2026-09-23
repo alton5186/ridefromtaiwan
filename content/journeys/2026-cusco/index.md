@@ -4,6 +4,7 @@ date: 2026-07-07
 description: "終於在還走得動的時候,來了。"
 summary: "終於在還走得動的時候,來了。"
 tags: ["秘魯", "Cusco 庫斯科", "Machu Picchu 馬丘比丘", "印加古道", "Inti Raymi", "購票"]
+regions: ["南美洲"]
 series: ["2026 秘魯・玻利維亞"]
 series_order: 3
 showHero: true

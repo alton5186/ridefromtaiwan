@@ -4,6 +4,7 @@ date: 2025-05-16
 description: "夜船到瑞典,火車過 Øresund 橋到哥本哈根,再搭 DFDS 郵輪過夜到奧斯陸;五天只騎 81 公里,卻換了三個國家。"
 summary: "夜船到瑞典,火車過 Øresund 橋到哥本哈根,再搭 DFDS 郵輪過夜到奧斯陸;五天只騎 81 公里,卻換了三個國家。"
 tags: ["瑞典", "丹麥", "挪威", "Malmö 馬爾默", "Copenhagen 哥本哈根", "Oslo 奧斯陸", "DFDS", "渡輪帶單車"]
+regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 4
 showHero: true

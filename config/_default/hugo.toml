@@ -20,6 +20,7 @@ hasCJKLanguage = true
   tag = "tags"
   category = "categories"
   series = "series"
+  region = "regions"
 
 [sitemap]
   changefreq = 'weekly'

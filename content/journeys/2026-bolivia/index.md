@@ -4,6 +4,7 @@ date: 2026-06-23
 description: "怕拉車還是去了,看到很多難以想像的地貌。"
 summary: "怕拉車還是去了,看到很多難以想像的地貌。"
 tags: ["玻利維亞", "La Paz 拉巴斯", "Uyuni 烏尤尼", "Salar de Uyuni", "Sud Lípez", "簽證"]
+regions: ["南美洲"]
 series: ["2026 秘魯・玻利維亞"]
 series_order: 2
 showHero: true

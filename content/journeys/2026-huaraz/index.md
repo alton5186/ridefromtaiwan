@@ -4,6 +4,7 @@ date: 2026-06-17
 description: "一輩子沒想過,我也會站到五千多公尺。"
 summary: "一輩子沒想過,我也會站到五千多公尺。"
 tags: ["秘魯", "Huaraz 瓦拉斯", "Cordillera Blanca", "Nevado Mateo", "冰攀", "健行"]
+regions: ["南美洲"]
 series: ["2026 秘魯・玻利維亞"]
 series_order: 1
 showHero: true

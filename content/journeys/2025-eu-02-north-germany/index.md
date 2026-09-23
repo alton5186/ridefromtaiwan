@@ -4,6 +4,7 @@ date: 2025-05-05
 description: "5 月初的清晨,營地桌上的露水結成了冰。就是這一晚,讓我改了主意:不往北,先往東。"
 summary: "5 月初的清晨,營地桌上的露水結成了冰。就是這一晚,讓我改了主意:不往北,先往東。"
 tags: ["德國", "Hamburg 漢堡", "Lübeck 呂北克", "Osnabrück", "露營", "火車帶單車"]
+regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 2
 showHero: true

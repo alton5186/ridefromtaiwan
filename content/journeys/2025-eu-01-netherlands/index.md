@@ -4,6 +4,7 @@ date: 2025-05-02
 description: "Schiphol 出關就上路:紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4,三天 223 公里。"
 summary: "Schiphol 出關就上路:紙箱留在轉盤旁,組好車直接牽出機場,第一天就騎上 LF4,三天 223 公里。"
 tags: ["荷蘭", "LF4", "Schiphol", "單車旅行", "露營"]
+regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 1
 showHero: true

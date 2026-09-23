@@ -4,6 +4,7 @@ date: 2025-05-11
 description: "受到氣溫的影響,先去波蘭古城什切青,再沿 EuroVelo 10 波羅的海岸線繞一圈;5/11 晚上在 Świnoujście 搭夜船往瑞典。"
 summary: "受到氣溫的影響,先去波蘭古城什切青,再沿 EuroVelo 10 波羅的海岸線繞一圈;5/11 晚上在 Świnoujście 搭夜船往瑞典。"
 tags: ["波蘭", "德國", "Szczecin 什切青", "EuroVelo 10", "Świnoujście", "波羅的海", "露營"]
+regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 3
 showHero: true
