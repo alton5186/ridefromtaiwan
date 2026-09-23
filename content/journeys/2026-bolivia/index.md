@@ -154,6 +154,8 @@ Salar de Uyuni 是世界最大的鹽沼,面積約 10,582 平方公里,海拔約 
 
 三點多到 Laguna Colorada。湖水因為藻類與礦物呈血紅色,是紅鶴的棲地。
 
+![站在黑色的沙丘上,影子拉得老長;下面是結冰的湖岸與紅色的水。](p-colorada-shadow.jpg "站在黑色的沙丘上,影子拉得老長;下面是結冰的湖岸與紅色的水。")
+
 ![Laguna Colorada 的紅鶴。](p-flamingos.jpg "Laguna Colorada 的紅鶴。")
 
 ![紅鶴起飛。同伴拍的。](p-flamingos-flying-friend.jpg "紅鶴起飛。同伴拍的。")
