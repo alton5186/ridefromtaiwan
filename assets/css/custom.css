@@ -1,0 +1,5 @@
+/* 列表頁左欄:固定不動,內容太長時欄內自己捲(09-23) */
+.toc-scroll{scrollbar-width:thin;scrollbar-color:rgba(120,120,120,.5) transparent}
+.toc-scroll::-webkit-scrollbar{width:8px}
+.toc-scroll::-webkit-scrollbar-thumb{background:rgba(120,120,120,.45);border-radius:4px}
+.toc-scroll::-webkit-scrollbar-track{background:transparent}
