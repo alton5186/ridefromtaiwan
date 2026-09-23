@@ -121,13 +121,29 @@ Christiansborg 宮旁邊的馬場,一輛黑色的馬車,兩匹白馬。
 
 ![Christiansborg 旁的馬場,黑馬車和兩匹白馬。](p-horse-carriage.jpg "Christiansborg 旁的馬場,黑馬車和兩匹白馬。")
 
+轉個身就是 Christiansborg 宮本體:綠色的銅尖塔立在灰色石牆上,前面的廣場空空的。丹麥的國會、首相府和最高法院都在這裡,三權同在一棟,全世界少見。
+
+![Christiansborg 宮。](p-christiansborg.jpg "Christiansborg 宮。")
+
 一點多,Gefion 噴泉:女神趕著四頭牛犁地,水從石堆上沖下來,後面是 St Alban's 教堂的尖塔。1908 年的作品,傳說她一夜之間犁出了整個 Zealand 島。
 
 ![Gefion 噴泉,女神趕著四頭牛,後面是 St Alban's 教堂。](p-gefion-fountain.jpg "Gefion 噴泉,女神趕著四頭牛,後面是 St Alban's 教堂。")
 
+港邊的新建築也值得看:磚色的大樓沿著水岸折成一排,底下是木棧道和幾顆黑色的石雕。
+
+![港邊的新建築與木棧道。](p-bryggen-arch.jpg "港邊的新建築與木棧道。")
+
+路邊一整排共享單車,橘的、綠的、白的停成一片——哥本哈根的街上,單車比車多。
+
+![路邊一整排共享單車。](p-city-bikes.jpg "路邊一整排共享單車。")
+
 再往前,小美人魚。1913 年放上這塊石頭;前面一位遊客正舉著手機拍她。
 
 ![小美人魚,前面一位遊客在拍她。](p-little-mermaid.jpg "小美人魚,前面一位遊客在拍她。")
+
+回程沿著 Nyhavn 外面的港道走,對岸是一排倉庫改建的房子,水上停著遊船。
+
+![Nyhavn 外的港道。](p-nyhavn-harbour.jpg "Nyhavn 外的港道。")
 
 下午三點前,已經在 DFDS 郵輪的艙房裡:一張床,牆上一片螢幕。16:30 開船,航程 17 小時 30 分,一路往北,明天早上到 Oslo。
 
