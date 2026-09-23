@@ -7,8 +7,7 @@ tags: ["瑞典", "丹麥", "挪威", "Malmö 馬爾默", "Copenhagen 哥本哈�
 regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 4
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 <small>5/12–5/16・81 km|上一站:[波蘭與波羅的海岸](../2025-eu-03-poland-baltic/)|下一站:哈當厄高原到峽灣</small>

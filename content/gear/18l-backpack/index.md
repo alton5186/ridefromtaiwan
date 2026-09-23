@@ -5,8 +5,7 @@ description: "這幾年唯一一次不騎車的純背包旅行,行李就這一�
 summary: "這幾年唯一一次不騎車的純背包旅行,行李就這一顆。"
 tags: ["裝備", "背包", "Mystery Ranch", "輕量化", "秘魯", "玻利維亞"]
 series: ["2026 秘魯・玻利維亞"]
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 | | |

@@ -45,6 +45,7 @@ defaultSocialImage = "img/og-image.jpg"
   layoutBackgroundBlur = false
 
 [article]
+  showHero = false
   showDate = true
   showDateOnlyInArticle = false
   showDateUpdated = false

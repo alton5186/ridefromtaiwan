@@ -7,8 +7,7 @@ tags: ["玻利維亞", "La Paz 拉巴斯", "Uyuni 烏尤尼", "Salar de Uyuni", 
 regions: ["南美洲"]
 series: ["2026 秘魯・玻利維亞"]
 series_order: 2
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 | | |

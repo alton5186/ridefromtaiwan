@@ -7,8 +7,7 @@ tags: ["秘魯", "Cusco 庫斯科", "Machu Picchu 馬丘比丘", "印加古道",
 regions: ["南美洲"]
 series: ["2026 秘魯・玻利維亞"]
 series_order: 3
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 | | |

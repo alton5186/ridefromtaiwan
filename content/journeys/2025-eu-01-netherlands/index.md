@@ -7,8 +7,7 @@ tags: ["荷蘭", "LF4", "Schiphol", "單車旅行", "露營"]
 regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 1
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 <small>4/30–5/2・223 km|下一站:德國北部</small>

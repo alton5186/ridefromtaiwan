@@ -7,8 +7,7 @@ tags: ["德國", "Hamburg 漢堡", "Lübeck 呂北克", "Osnabrück", "露營", 
 regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 2
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 <small>5/3–5/5・165 km|上一站:[荷蘭](../2025-eu-01-netherlands/)|下一站:波蘭與波羅的海岸</small>

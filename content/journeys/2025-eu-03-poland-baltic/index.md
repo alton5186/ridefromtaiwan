@@ -7,8 +7,7 @@ tags: ["波蘭", "德國", "Szczecin 什切青", "EuroVelo 10", "Świnoujście",
 regions: ["歐洲"]
 series: ["2025 歐洲十國單車"]
 series_order: 3
-showHero: true
-heroStyle: "background"
+showHero: false
 ---
 
 <small>5/6–5/11・161 km|上一站:[德國北部](../2025-eu-02-north-germany/)|下一站:哥本哈根與奧斯陸</small>
