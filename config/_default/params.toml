@@ -50,8 +50,8 @@ defaultSocialImage = "img/og-image.jpg"
   showDateUpdated = false
   showAuthor = false
   showHero = true
-  heroStyle = "background"
-  layoutBackgroundBlur = true
+  heroStyle = "basic"
+  layoutBackgroundBlur = false
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = true
   showDraftLabel = true
@@ -72,9 +72,9 @@ defaultSocialImage = "img/og-image.jpg"
   showZenMode = false
 
 [list]
-  showHero = true
-  heroStyle = "background"
-  layoutBackgroundBlur = true
+  showHero = false
+  heroStyle = "basic"
+  layoutBackgroundBlur = false
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
   showSummary = true
