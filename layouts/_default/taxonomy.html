@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{/* 系列/標籤頁:左邊維持旅程選單,右邊列該系列的文章(他 09-24:點進去左側選單不要不見) */}}
+<header>
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400">{{ .Description }}</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-10">
+  <aside class="lg:w-80 shrink-0">
+    <div class="toc-sticky">
+      {{ partial "toc-nav.html" (dict "sec" "旅程" "pages" (where site.RegularPages "Section" "journeys").ByDate.Reverse "cur" .) }}
+    </div>
+  </aside>
+  <section class="grow min-w-0">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">這個系列</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range .Pages.ByDate }}{{ partial "article-link/card.html" . }}{{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
