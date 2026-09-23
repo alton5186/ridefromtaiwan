@@ -13,31 +13,29 @@
             <span class="ms-2 shrink-0 text-xs text-neutral-500 dark:text-neutral-400">{{ len $rp }} 篇 <span class="inline-block transition group-open:rotate-90">›</span></span>
           </summary>
           <div class="mt-3 ps-3 border-s border-neutral-300 dark:border-neutral-600 space-y-3">
-            {{ $seen := slice }}
-            {{ range $rp }}
-              {{ $ser := "" }}{{ with .Params.series }}{{ $ser = index . 0 }}{{ end }}
-              {{ if $ser }}
-                {{ if not (in $seen $ser) }}
-                  {{ $seen = $seen | append $ser }}
-                  {{ $sp := where $rp "Params.series" "intersect" (slice $ser) }}
-                  <details class="group/s"{{ if and $cur (in ($cur.Params.series | default slice) $ser) }} open{{ end }}>
-                    <summary class="{{ $btn }} cursor-pointer list-none flex items-center justify-between">
-                      <span class="font-semibold">{{ $ser }}</span>
-                      <span class="ms-2 shrink-0 text-xs text-neutral-500 dark:text-neutral-400">{{ len $sp }} 篇 <span class="inline-block transition group-open/s:rotate-90">›</span></span>
-                    </summary>
-                    <ul class="mt-3 space-y-3 ps-3 border-s border-neutral-300 dark:border-neutral-600">
-                      {{ range sort $sp "Date" }}
-                        <li><a class="{{ $btn }}" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
-                          <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a></li>
-                      {{ end }}
-                    </ul>
-                  </details>
-                {{ end }}
-              {{ else }}
-                <a class="{{ $btn }}" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
-                  <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a>
-              {{ end }}
+            {{/* 地區底下再依國家分;一篇跨兩國就都出現(他 09-24) */}}
+            {{ $cs := slice }}
+            {{ range $rp }}{{ with .Params.countries }}{{ range . }}{{ if not (in $cs .) }}{{ $cs = $cs | append . }}{{ end }}{{ end }}{{ end }}{{ end }}
+            {{ range $cs }}
+              {{ $c := . }}
+              {{ $cp := where $rp "Params.countries" "intersect" (slice $c) }}
+              <details class="group/c"{{ if and $cur (in ($cur.Params.countries | default slice) $c) }} open{{ end }}>
+                <summary class="{{ $btn }} cursor-pointer list-none flex items-center justify-between">
+                  <span class="font-semibold">{{ $c }}</span>
+                  <span class="ms-2 shrink-0 text-xs text-neutral-500 dark:text-neutral-400">{{ len $cp }} 篇 <span class="inline-block transition group-open/c:rotate-90">›</span></span>
+                </summary>
+                <ul class="mt-3 space-y-3 ps-3 border-s border-neutral-300 dark:border-neutral-600">
+                  {{ range sort $cp "Date" }}
+                    <li><a class="{{ $btn }}{{ if and $cur (eq .RelPermalink $cur.RelPermalink) }} !border-primary-500{{ end }}" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
+                      <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a></li>
+                  {{ end }}
+                </ul>
+              </details>
             {{ end }}
+            {{ range $rp }}{{ if not .Params.countries }}
+              <a class="{{ $btn }}" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
+                <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a>
+            {{ end }}{{ end }}
           </div>
         </details>
       {{ end }}
