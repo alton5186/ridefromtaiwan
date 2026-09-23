@@ -1,0 +1,20 @@
+{{/* 照片預載:捲到前 2 個畫面就先抓下一批,滑動時不會等(他 09-23:一頁一頁預載) */}}
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  document.addEventListener('DOMContentLoaded',function(){
+    var imgs=[].slice.call(document.querySelectorAll('.article-content img[loading="lazy"]'));
+    imgs.slice(0,3).forEach(function(im){im.loading='eager';im.fetchPriority='high';});
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        var im=e.target; io.unobserve(im);
+        im.loading='eager';
+        var s=im.getAttribute('srcset')||im.getAttribute('src');
+        if(s){var p=new Image(); if(im.getAttribute('srcset')){p.srcset=im.getAttribute('srcset'); p.sizes=im.getAttribute('sizes')||'';} p.src=im.getAttribute('src');}
+      });
+    },{rootMargin:'2000px 0px'});
+    imgs.forEach(function(im){io.observe(im);});
+  });
+})();
+</script>
