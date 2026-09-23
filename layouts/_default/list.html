@@ -13,7 +13,7 @@
 <div class="flex flex-col lg:flex-row gap-10">
   {{/* 左:目錄 */}}
   <aside class="lg:w-80 shrink-0">
-    <div class="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pe-2 toc-scroll">
+    <div class="toc-sticky">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">全部{{ .Title }}</h2>
       {{/* 左欄:地區 → 該地區的旅程(系列一列、單篇一列),點一下展開/收合。方便日後加日本等新地區(他 09-23) */}}
       {{ $btn := "toc-btn block rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] leading-snug text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition" }}
