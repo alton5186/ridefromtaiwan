@@ -25,10 +25,23 @@
         </ul>
       {{ end }}{{ end }}
       {{ if eq .Section "journeys" }}{{ with site.Taxonomies.series }}
+        {{ $btn2 := "toc-btn block rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] leading-snug text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition" }}
         <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2">系列</h2>
-        <ul class="space-y-3">
-          {{ range . }}<li><a class="block rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-4 py-3.5 text-[15px] text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition" href="{{ .Page.RelPermalink }}"><span class="font-semibold">{{ .Page.Title }}</span> <span class="ms-1 text-xs text-neutral-500 dark:text-neutral-400">{{ .Count }} 篇</span></a></li>{{ end }}
-        </ul>
+        {{ range . }}
+          <details class="mb-3 group/t">
+            <summary class="{{ $btn2 }} cursor-pointer list-none flex items-center justify-between">
+              <span class="font-semibold">{{ .Page.Title }}</span>
+              <span class="ms-2 shrink-0 text-xs text-neutral-500 dark:text-neutral-400">{{ .Count }} 篇 <span class="inline-block transition group-open/t:rotate-90">›</span></span>
+            </summary>
+            <ul class="mt-3 space-y-3 ps-3 border-s border-neutral-300 dark:border-neutral-600">
+              {{ range sort .Pages "Date" }}
+                <li><a class="{{ $btn2 }}" href="{{ .RelPermalink }}"><span class="font-semibold block">{{ .Title }}</span>
+                  <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{{ .Date.Format "2006 年 1 月 2 日" }}</span></a></li>
+              {{ end }}
+              <li><a class="text-xs text-neutral-500 dark:text-neutral-400 underline" href="{{ .Page.RelPermalink }}">看系列總覽 →</a></li>
+            </ul>
+          </details>
+        {{ end }}
       {{ end }}{{ end }}
     </div>
   </aside>
