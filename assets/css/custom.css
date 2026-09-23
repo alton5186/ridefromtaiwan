@@ -17,3 +17,6 @@
 /* 文章頁左欄:桌機固定寬度、手機收在最上面(Blowfish 沒有 lg:w-72 這些 class) */
 .side-nav{width:100%}
 @media (min-width:1024px){ .side-nav{width:18rem;flex:0 0 18rem;padding-inline-end:2rem} }
+
+/* 首頁橫幅:主題會疊一層藍色漸層,拿掉、用照片原色(09-23) */
+.mix-blend-multiply { mix-blend-mode: normal !important; background: none !important; }
