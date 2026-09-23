@@ -143,6 +143,10 @@ heroStyle: "background"
 
 ![石牆前的舞者。](p-intiraymi-wall.jpg "石牆前的舞者。")
 
+最讓我印象深刻的是最後那一段:祭司把一頭駱馬帶上祭台,在上面完成獻祭的儀式。三點半左右,一群披著桃紅色披風、戴羽毛頭飾的人圍在石台前,動物就在中間。
+
+![祭台上,披紅披風的祭司圍著中間的獻祭。](p-intiraymi-altar.jpg "祭台上,披紅披風的祭司圍著中間的獻祭。")
+
 ![戰士之舞。](p-intiraymi-warriors.jpg "戰士之舞。")
 
 ![長矛。](p-intiraymi-spears.jpg "長矛。")
