@@ -53,7 +53,7 @@
 
       {{/* 左欄清單(journeys 才顯示):點進文章也留著,方便跳下一站 */}}
       {{ if eq .Section "journeys" }}
-        <aside class="order-first w-full lg:w-72 shrink-0 lg:pe-8 not-prose print:hidden">
+        <aside class="side-nav order-first not-prose print:hidden">
           <div class="toc-sticky">
             {{ partial "toc-nav.html" (dict "sec" "旅程" "pages" (where site.RegularPages "Section" "journeys").ByDate.Reverse "cur" .) }}
           </div>

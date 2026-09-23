@@ -13,3 +13,7 @@
 .toc-sticky::-webkit-scrollbar{width:8px}
 .toc-sticky::-webkit-scrollbar-thumb{background:rgba(120,120,120,.45);border-radius:4px}
 .toc-sticky::-webkit-scrollbar-track{background:transparent}
+
+/* 文章頁左欄:桌機固定寬度、手機收在最上面(Blowfish 沒有 lg:w-72 這些 class) */
+.side-nav{width:100%}
+@media (min-width:1024px){ .side-nav{width:18rem;flex:0 0 18rem;padding-inline-end:2rem} }
