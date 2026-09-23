@@ -116,6 +116,8 @@ heroStyle: "background"
 
 ![往 Pastoruri 的路上,湖面倒影與雲。](p-reflection.jpg "往 Pastoruri 的路上,湖面倒影與雲。")
 
+![鋪好的石板步道一路往山谷裡去,盡頭就是冰河。](p-pastoruri-path.jpg "鋪好的石板步道一路往山谷裡去,盡頭就是冰河。")
+
 ![Pastoruri 冰河:廣角、近看、藍冰。](c-pastoruri.jpg "Pastoruri 冰河:廣角、近看、藍冰。")
 
 ![藍冰。](p-blue-ice.jpg "藍冰。")
