@@ -33,6 +33,7 @@ defaultSocialImage = "img/og-image.jpg"
 
 [homepage]
   disableHeroImageFilter = true
+  imagePosition = "70% 55%"
   layout = "hero"
   homepageImage = "img/home-bg.jpg"
   showRecent = true
