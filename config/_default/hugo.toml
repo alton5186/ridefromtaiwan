@@ -14,7 +14,10 @@ hasCJKLanguage = true
 
 [imaging]
   anchor = 'Center'
-  quality = 82
+  [imaging.jpeg]
+    quality = 72
+  [imaging.webp]
+    quality = 72
 
 [taxonomies]
   tag = "tags"
