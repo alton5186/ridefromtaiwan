@@ -1,7 +1,7 @@
 {{- /* 蓋掉主題的麵包屑:改成明顯的「← 回列表」按鈕(他 09-21:原本的看不出來) */ -}}
 {{- $sec := .FirstSection -}}
 {{- if and $sec (ne $sec .) -}}
-<a href="{{ $sec.RelPermalink }}" class="not-prose inline-flex items-center gap-2 rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white/90 dark:bg-neutral-800/90 px-4 py-2 text-sm font-semibold text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition mb-4">
+<a href="{{ $sec.RelPermalink }}" class="back-btn not-prose inline-flex items-center gap-2 rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white/90 dark:bg-neutral-800/90 px-4 py-2 text-sm font-semibold text-neutral-800 dark:text-neutral-100 no-underline shadow-[0_3px_0_0_rgba(0,0,0,.25),0_6px_12px_-4px_rgba(0,0,0,.35)] hover:-translate-y-0.5 hover:border-primary-500 active:translate-y-0.5 active:shadow-none transition mb-4">
   <span aria-hidden="true">←</span> 回「{{ $sec.Title }}」列表
 </a>
 {{- end -}}

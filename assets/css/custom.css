@@ -34,3 +34,7 @@
 .toc-sticky details ul li a .font-semibold { color: #e5e7eb; font-weight: 500; } /* 文章 */
 .toc-sticky > details > summary { background: rgba(147,197,253,.10) !important; }
 .toc-sticky > details details > summary { background: rgba(125,211,252,.07) !important; }
+
+/* 「← 回列表」按鈕:用主色系凸顯(09-24) */
+.back-btn { background: rgba(147,197,253,.14) !important; border-color: #60a5fa !important; color: #bfdbfe !important; }
+.back-btn:hover { background: rgba(147,197,253,.24) !important; color: #fff !important; }
