@@ -32,11 +32,12 @@
 .toc-sticky > details > summary{
   background:none !important; border:0 !important; box-shadow:none !important;
   padding:.35rem .25rem !important; border-radius:0 !important;
-  font-size:12px; letter-spacing:.08em; text-transform:none;
-  color:#8fb6e8; transform:none !important;
+  font-size:17px; letter-spacing:.02em;
+  color:#93c5fd; transform:none !important;
 }
 .toc-sticky > details > summary:hover{ color:#bfdbfe; }
-.toc-sticky > details > summary .font-semibold{ font-weight:600; }
+.toc-sticky > details > summary .font-semibold{ font-weight:700; font-size:17px; }
+.toc-sticky > details details > summary .font-semibold{ font-size:14.5px; font-weight:600; }
 /* 第二層:國家 —— 細長一列,左邊一個小點 */
 .toc-sticky > details details > summary{
   background:none !important; border:0 !important; box-shadow:none !important;
