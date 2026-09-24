@@ -51,6 +51,7 @@
       ctx.fillStyle = C.dotEdge; ctx.font = 'bold 14px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText(String(p.n), c[0], c[1] + .5);
     });
+    pointer();
   }
 
   // ── 方向線:照片裡的人 → 地球上正對著的國家(他 09-24 手畫的箭頭)
@@ -94,7 +95,7 @@
     tag.textContent = p.name + ' · ' + p.n + ' 篇';
   }
 
-  function tick() { dash = (dash + .35) % 12; if (spin) rot[0] += .18; draw(); pointer(); raf = requestAnimationFrame(tick); }
+  function tick() { dash = (dash + .35) % 12; if (spin) rot[0] += .18; draw(); raf = requestAnimationFrame(tick); }
   function start() { if (!raf) raf = requestAnimationFrame(tick); }
   function stop() { if (raf) { cancelAnimationFrame(raf); raf = null; } }
 
