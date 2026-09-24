@@ -71,6 +71,7 @@
     pathEl = svg.querySelector('#gp-path'); dotA = svg.querySelector('#gp-a'); dotB = svg.querySelector('#gp-b'); tag = svg.querySelector('#gp-tag');
   }
   var bgImg = document.querySelector('img[src*="home-bg"]');
+  window.__globe = { rot: function(){return rot;}, fm: function(){return frontMost();}, pts: pts };
   function frontMost() {
     if (hover) return hover;
     var best = null, bd = 9;
