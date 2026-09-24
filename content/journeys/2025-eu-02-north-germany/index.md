@@ -70,7 +70,6 @@ showHero: false
 
 從街口退開一點看,那個尖角就像一艘船的船首,硬生生切進兩條街之間。
 
-![Chilehaus 的尖角,像船首切進街口。](p-chilehaus-wide.jpg "Chilehaus 的尖角,像船首切進街口。")
 
 再往前是倉庫城(Speicherstadt)。紅磚倉庫一棟接一棟,綠色的銅屋頂,前面一座黑色的鐵橋跨過運河。這是世界上最大的倉庫區,十九世紀末建在橡木樁上;當年整區是免稅港,咖啡、香料、地毯就堆在這些磚樓裡。
 
@@ -82,11 +81,9 @@ showHero: false
 
 中午十二點多,St. Michaelis 教堂的塔樓:黑色的塔身、金色的鐘面,前面剛好擋著一支紅綠燈。漢堡人叫它 Michel,從易北河進港的船,老遠就先看到這座塔。
 
-![St. Michaelis 教堂的塔樓。](p-michel-tower.jpg "St. Michaelis 教堂的塔樓。")
 
 下午四點多,出了市區往東北騎,停在 Ahrensburg 附近的營地。帳篷搭在草地上,旁邊一排露營車。
 
-![Ahrensburg 附近的營地。](p-camp-ahrensburg.jpg "Ahrensburg 附近的營地。")
 
 ## 5/5:露水結冰
 
