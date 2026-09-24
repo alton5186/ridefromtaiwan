@@ -1,5 +1,6 @@
 ---
 title: "2025 歐洲十國——第三站 波蘭與波羅的海岸"
+short_name: "波蘭海岸"
 date: 2025-05-11
 description: "受到氣溫的影響,先去波蘭古城什切青,再沿 EuroVelo 10 波羅的海岸線繞一圈;5/11 晚上在 Świnoujście 搭夜船往瑞典。"
 summary: "受到氣溫的影響,先去波蘭古城什切青,再沿 EuroVelo 10 波羅的海岸線繞一圈;5/11 晚上在 Świnoujście 搭夜船往瑞典。"

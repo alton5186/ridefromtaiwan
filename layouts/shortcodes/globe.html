@@ -1,18 +1,40 @@
-{{- /* 首頁地球儀:標出去過的國家與文章數,可轉、可拖、點了跳到該國文章(他 09-24) */ -}}
-{{- $coords := site.Data.country_coords -}}
+{{- /* 首頁地球儀(他 09-24):去過的國家、從台灣出發的航線、logo 小人騎過去;
+     滑過國家看名字,點國家 → 放大成有弧度的地圖,畫出騎過的路線、每篇一個有名字的點
+     國家座標:data/country_coords.yaml;篇數:遊記的 countries 參數;路線:partial globe-routes(build 時抽) */ -}}
+{{- $coords := hugo.Data.country_coords -}}
+{{- $journeys := where site.RegularPages "Section" "journeys" -}}
 {{- $pts := slice -}}
+{{- $urls := slice -}}
 {{- range $c, $ll := $coords -}}
-  {{- $ps := where (where site.RegularPages "Section" "journeys") "Params.countries" "intersect" (slice $c) -}}
+  {{- $ps := where $journeys "Params.countries" "intersect" (slice $c) -}}
   {{- if $ps -}}
-    {{- $pts = $pts | append (dict "name" $c "lat" (index $ll 0) "lon" (index $ll 1) "n" (len $ps) "url" (printf "/journeys/#%s" (urlize $c))) -}}
+    {{- range $ps }}{{ $urls = $urls | append .RelPermalink }}{{ end -}}
+    {{- $pts = $pts | append (dict "name" $c "lat" (index $ll 0) "lon" (index $ll 1) "n" (len $ps) "last" (index $ps.ByDate.Reverse 0).Date.Unix "pages" $ps.ByDate) -}}
   {{- end -}}
 {{- end -}}
+{{- $nArt := len (uniq $urls) -}}
+{{- $routes := partialCached "globe-routes.html" . "globe-routes" -}}
+{{- $rj := resources.FromString "data/globe-routes.json" (dict "articles" $routes | jsonify) | fingerprint "md5" -}}
+{{- $meta := dict "countries" (len $pts) "articles" $nArt "routes" $rj.RelPermalink "land" ("data/land-110m.json" | relURL) "detail" ("data/countries-50m.json" | relURL) -}}
 <div id="globe-wrap" class="not-prose my-6 flex flex-col items-center">
-  <canvas id="globe" width="640" height="640" style="width:min(100%,420px);height:auto;cursor:grab"></canvas>
-  <div id="globe-label" class="mt-2 text-sm text-neutral-500 dark:text-neutral-400" style="min-height:1.5em"></div>
+  <div id="globe-stage">
+    <canvas id="globe" width="640" height="640" role="img" aria-label="地球儀:從台灣出發,騎過 {{ len $pts }} 個國家、{{ $nArt }} 篇遊記"></canvas>
+    <div id="globe-tip" aria-hidden="true"></div>
+    <div id="globe-pins"></div>
+    <button id="globe-back" type="button" hidden>← 回到地球</button>
+  </div>
+  <div id="globe-label" aria-live="polite"></div>
+  {{- /* 給螢幕閱讀器 / 鍵盤:每個國家底下直接連到每一篇(連結拿到焦點時,地球上會選中那一國) */}}
+  <ul class="sr-only">
+    {{- range $i, $p := $pts }}<li data-i="{{ $i }}">{{ $p.name }}({{ $p.n }} 篇)<ul>{{ range $p.pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul></li>{{ end -}}
+  </ul>
 </div>
-<script>window.GLOBE_POINTS = {{ $pts | jsonify | safeJS }};</script>
+{{- $gp := slice -}}
+{{- range $pts }}{{ $gp = $gp | append (dict "name" .name "lat" .lat "lon" .lon "n" .n "last" .last) }}{{ end }}
+<script>window.GLOBE_POINTS = {{ $gp | jsonify | safeJS }};window.GLOBE_META = {{ $meta | jsonify | safeJS }};</script>
 <script src="{{ "js/d3-array.min.js" | absURL }}" defer></script>
 <script src="{{ "js/d3-geo.min.js" | absURL }}" defer></script>
 <script src="{{ "js/topojson-client.min.js" | absURL }}" defer></script>
-<script src="{{ "js/globe.js" | absURL }}?v={{ now.Unix }}" defer></script>
+{{- /* globe.js 放 assets/,檔名帶內容雜湊:改了就換網址(hugo server 也會跟著重畫),沒改就沿用瀏覽器快取 */}}
+{{- $js := resources.Get "js/globe.js" | fingerprint "md5" }}
+<script src="{{ $js.RelPermalink }}" defer></script>

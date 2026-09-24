@@ -1,0 +1,61 @@
+{{- /* 首頁地球儀「點國家 → 放大看路線」用的資料(他 09-24):每篇遊記一筆
+     t 標題 · l 短名(標題「——」後半,或「:」前半,都沒有就整個標題)· u 網址 · d 年-月 · o 系列第幾篇 · c 國家
+     tr 軌跡:[{p:[經度,緯度,經度,緯度…]}…](一天/一段一條)
+     軌跡來源依序:static/gpx/<資料夾名>.gpx(每段取約 150 點)
+                → static/maps/<資料夾名>.html 路線圖裡的折線(照片 GPS;灰色「整趟路線」不要)
+                → 都沒有就空的(前端用國家座標標點)
+     src 記下用了哪一種(gpx / photo / none),方便查
+     只在首頁 {{< globe >}} 用,partialCached 一次 build 只算一次 */ -}}
+{{- $out := slice -}}
+{{- range (where site.RegularPages "Section" "journeys").ByDate -}}
+  {{- $pg := . -}}
+  {{- if $pg.Params.countries -}}
+    {{- $slug := path.Base $pg.File.Dir -}}
+    {{- $segs := slice -}}
+    {{- $src := "none" -}}
+    {{- $gpx := printf "static/gpx/%s.gpx" $slug -}}
+    {{- $map := printf "static/maps/%s.html" $slug -}}
+    {{- if fileExists $gpx -}}
+      {{- $x := resources.FromString (printf "globe-src/%s.xml" $slug) (os.ReadFile $gpx) | transform.Unmarshal -}}
+      {{- $trks := $x.trk -}}{{- if reflect.IsMap $trks }}{{ $trks = slice $trks }}{{ end -}}
+      {{- range $trks -}}
+        {{- $ss := .trkseg -}}{{- if reflect.IsMap $ss }}{{ $ss = slice $ss }}{{ end -}}
+        {{- range $ss -}}
+          {{- $pts := .trkpt -}}{{- if reflect.IsMap $pts }}{{ $pts = slice $pts }}{{ end -}}
+          {{- $n := len $pts -}}
+          {{- if ge $n 2 -}}
+            {{- $step := math.Ceil (div (float $n) 150) | int -}}
+            {{- $flat := slice -}}
+            {{- range $i, $p := $pts -}}
+              {{- if or (eq (mod $i $step) 0) (eq $i (sub $n 1)) -}}
+                {{- $flat = $flat | append (div (math.Round (mul (float (index $p "-lon")) 10000)) 10000) (div (math.Round (mul (float (index $p "-lat")) 10000)) 10000) -}}
+              {{- end -}}
+            {{- end -}}
+            {{- $segs = $segs | append (dict "p" $flat) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $segs }}{{ $src = "gpx" }}{{ end -}}
+    {{- end -}}
+    {{- if and (not $segs) (fileExists $map) -}}
+      {{- range $i, $mm := findRESubmatch `L\.polyline\(\s*(\[\[[-0-9.,\s\[\]]*\]\])\s*,\s*(\{[^}]*\})` (os.ReadFile $map) -}}
+        {{- if not (strings.Contains (index $mm 2) "#555") -}}
+          {{- $ll := resources.FromString (printf "globe-src/%s-%d.json" $slug $i) (index $mm 1) | transform.Unmarshal -}}
+          {{- $flat := slice -}}
+          {{- range $ll }}{{ $flat = $flat | append (index . 1) (index . 0) }}{{ end -}}
+          {{- if ge (len $flat) 4 }}{{ $segs = $segs | append (dict "p" $flat) }}{{ end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $segs }}{{ $src = "photo" }}{{ end -}}
+    {{- end -}}
+    {{- $t := $pg.Title -}}
+    {{- $l := $t -}}
+    {{- if $pg.Params.short_name -}}{{- $l = $pg.Params.short_name -}}{{/* 09-24 他:地圖上的點用短名 */}}
+    {{- else if in $t "——" -}}{{- $l = index (split $t "——") 1 -}}
+    {{- else if in $t ":" -}}{{- $l = index (split $t ":") 0 -}}
+    {{- else if in $t ":" -}}{{- $l = index (split $t ":") 0 -}}
+    {{- end -}}
+    {{- $out = $out | append (dict "t" $t "l" (trim $l " ") "u" $pg.RelPermalink "d" ($pg.Date.Format "2006-01") "o" (int ($pg.Params.series_order | default 0)) "c" $pg.Params.countries "src" $src "tr" $segs) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

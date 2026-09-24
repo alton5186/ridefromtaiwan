@@ -59,14 +59,65 @@
 .back-btn { background: rgba(147,197,253,.14) !important; border-color: #60a5fa !important; color: #bfdbfe !important; }
 .back-btn:hover { background: rgba(147,197,253,.24) !important; color: #fff !important; }
 
-/* 首頁地球:桌機靠右下,不擋住照片裡的人;手機回到一般流(09-24) */
-@media (min-width:1024px){
-  #globe-wrap{ position:absolute; right:1.5rem; top:1rem; margin:0; z-index:2; }
-  #globe-wrap canvas{ width:340px !important; }
+/* 首頁地球儀(09-24:美術評估 + logo 小人 + 點國家放大看路線)
+   桌機(≥1024):照片右上,1240 以上 340px、以下 260px,不擋騎士、標題和 logo;平板:文字下面靠右;
+   手機(≤640):文字下面置中(騎士在手機裁切外,不會被蓋到)
+   陰影改由 globe.js 預先畫好的光影圖層負責(拿掉原本每格都要重算的 drop-shadow) */
+#globe-stage{ position:relative; width:min(100%,420px); aspect-ratio:1/1; margin:0 auto; }
+#globe{ display:block; width:100%; height:100%; cursor:grab; touch-action:pan-y; -webkit-tap-highlight-color:transparent; }
+/* 平板:照片裡的騎士在左邊,地球靠右放,不壓到他 */
+@media (min-width:641px) and (max-width:1023px){
+  #globe-wrap{ align-items:flex-end; }
+  #globe-stage, #globe-label{ width:min(100%,400px); margin-left:0; margin-right:0; }
 }
-#globe-wrap canvas{ filter: drop-shadow(0 12px 28px rgba(0,0,0,.45)); }
-#globe-label{ text-shadow:0 1px 3px rgba(0,0,0,.6); }
+/* 桌機:放在照片右上。1024–1239 橫幅只有 768–1000 寬,340px 會壓到標題和 logo:
+   縮成 260px、往上移一點,讓下面那行說明落在標題上方 */
+@media (min-width:1024px){
+  #globe-wrap{ position:absolute; right:1.5rem; top:.5rem; margin:0; z-index:2; }
+  #globe-stage{ width:260px; }
+}
+@media (min-width:1240px){
+  #globe-wrap{ top:1rem; }
+  #globe-stage{ width:340px; }
+}
+#globe-label{ min-height:1.5em; margin-top:.35rem; font-size:13px; letter-spacing:.06em; line-height:1.5; text-align:center;
+  color:#e8edf3; text-shadow:0 1px 3px rgba(0,0,0,.7); }
+#globe-label b{ font-weight:600; color:#93c5fd; font-variant-numeric:tabular-nums; }
+#globe-label a{ color:#f6b89c; text-decoration:underline; text-underline-offset:3px; }
+#globe-label a:hover{ color:#fff; }
+/* 國名提示:滑過 / 手機點一下 / 小人抵達時 */
+#globe-tip{ position:absolute; left:0; top:0; z-index:3; pointer-events:none; white-space:nowrap;
+  padding:4px 10px; border-radius:999px; font-size:13px; line-height:1.35; color:#e8edf3;
+  background:rgba(27,37,52,.88); box-shadow:0 2px 10px rgba(0,0,0,.35); opacity:0; transition:opacity .16s; }
+#globe-tip.on{ opacity:1; }
+#globe-tip b{ font-weight:600; }
+#globe-tip span{ color:#93c5fd; font-variant-numeric:tabular-nums; }
+/* 放大地圖:回到地球、每篇一個點 */
+#globe-back{ position:absolute; left:0; top:0; z-index:4; padding:5px 12px; border-radius:999px; font-size:13px; line-height:1.35;
+  color:#e8edf3; background:rgba(27,37,52,.88); border:1px solid rgba(147,197,253,.45); cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.35); }
+#globe-back:hover, #globe-back:focus-visible{ background:#e8edf3; color:#1b2534; outline:none; }
+#globe-back[hidden]{ display:none; }
+#globe-pins{ position:absolute; inset:0; z-index:3; pointer-events:none; }
+.gz-pin{ position:absolute; left:0; top:0; width:0; height:0; pointer-events:auto; text-decoration:none !important;
+  opacity:0; visibility:hidden; transition:opacity .3s, visibility .3s; }
+.gz-pin.on{ opacity:1; visibility:visible; }
+.gz-pin .n{ position:absolute; left:-11px; top:-11px; width:22px; height:22px; border-radius:50%; text-align:center;
+  font:700 12px/22px system-ui,sans-serif; color:#1b2534; background:#ee7d55; box-shadow:0 0 0 2px #1b2534, 0 2px 6px rgba(0,0,0,.45); }
+.gz-pin .l{ position:absolute; left:16px; top:0; transform:translateY(-50%); width:max-content; max-width:10.5em;
+  padding:3px 8px; border-radius:6px; font-size:12.5px; line-height:1.35; white-space:normal;
+  color:#e8edf3; background:rgba(27,37,52,.9); box-shadow:0 2px 8px rgba(0,0,0,.35); }
+.gz-pin .l small{ display:block; font-size:11px; color:#aab6c4; }
+/* 標籤放哪一邊由 globe.js 挑(蓋到最少路線):右(預設)/ 左 / 上 / 下 */
+.gz-pin.pos-l .l{ left:auto; right:16px; text-align:right; }
+.gz-pin.pos-t .l, .gz-pin.pos-b .l{ left:0; transform:translateX(-50%); text-align:center; }
+.gz-pin.pos-t .l{ top:auto; bottom:16px; }
+.gz-pin.pos-b .l{ top:16px; }
+.gz-pin:hover .l, .gz-pin:focus-visible .l{ background:#e8edf3; color:#1b2534; }
+.gz-pin:hover .l small, .gz-pin:focus-visible .l small{ color:#475569; }
+.gz-pin:focus-visible{ outline:none; }
+.gz-pin:focus-visible .n{ box-shadow:0 0 0 2px #1b2534, 0 0 0 4px #93c5fd; }
 
-/* 從照片裡的人拉到地球上那個國家的方向線(桌機才顯示) */
-#globe-pointer{ position:absolute; inset:0; pointer-events:none; z-index:1; display:none; }
+/* 從照片裡的騎士拉到地球上那個國家的方向線(桌機才顯示;騎士端柿橙 → 國家端淡藍,虛線不動) */
+#globe-pointer{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; z-index:1; display:none; opacity:0; transition:opacity .22s; }
 @media (min-width:1024px){ #globe-pointer{ display:block; } }
+@media (prefers-reduced-motion: reduce){ #globe-tip, .gz-pin, #globe-pointer{ transition:none; } }
