@@ -27,3 +27,10 @@
 .toc-sticky details details .toc-btn { background: rgba(255,255,255,.06) !important; font-weight: 400; }
 .dark .toc-sticky details ul .toc-btn { background: rgba(255,255,255,.05) !important; }
 .toc-sticky details ul .toc-btn:hover { background: rgba(255,255,255,.12) !important; }
+
+/* 左欄三層的層次:地區=淡藍、國家=淡青、文章=一般白(09-24) */
+.toc-sticky > details > summary .font-semibold { color: #93c5fd; }            /* 地區 */
+.toc-sticky > details details > summary .font-semibold { color: #7dd3fc; font-size: 14px; } /* 國家/系列 */
+.toc-sticky details ul li a .font-semibold { color: #e5e7eb; font-weight: 500; } /* 文章 */
+.toc-sticky > details > summary { background: rgba(147,197,253,.10) !important; }
+.toc-sticky > details details > summary { background: rgba(125,211,252,.07) !important; }
