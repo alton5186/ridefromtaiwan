@@ -1,0 +1,18 @@
+{{- /* 首頁地球儀:標出去過的國家與文章數,可轉、可拖、點了跳到該國文章(他 09-24) */ -}}
+{{- $coords := site.Data.country_coords -}}
+{{- $pts := slice -}}
+{{- range $c, $ll := $coords -}}
+  {{- $ps := where (where site.RegularPages "Section" "journeys") "Params.countries" "intersect" (slice $c) -}}
+  {{- if $ps -}}
+    {{- $pts = $pts | append (dict "name" $c "lat" (index $ll 0) "lon" (index $ll 1) "n" (len $ps) "url" (printf "/journeys/#%s" (urlize $c))) -}}
+  {{- end -}}
+{{- end -}}
+<div id="globe-wrap" class="not-prose my-6 flex flex-col items-center">
+  <canvas id="globe" width="640" height="640" style="width:min(100%,420px);height:auto;cursor:grab"></canvas>
+  <div id="globe-label" class="mt-2 text-sm text-neutral-500 dark:text-neutral-400" style="min-height:1.5em"></div>
+</div>
+<script>window.GLOBE_POINTS = {{ $pts | jsonify | safeJS }};</script>
+<script src="{{ "js/d3-array.min.js" | absURL }}" defer></script>
+<script src="{{ "js/d3-geo.min.js" | absURL }}" defer></script>
+<script src="{{ "js/topojson-client.min.js" | absURL }}" defer></script>
+<script src="{{ "js/globe.js" | absURL }}" defer></script>
