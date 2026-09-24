@@ -28,12 +28,31 @@
 .dark .toc-sticky details ul .toc-btn { background: rgba(255,255,255,.05) !important; }
 .toc-sticky details ul .toc-btn:hover { background: rgba(255,255,255,.12) !important; }
 
-/* 左欄三層的層次:地區=淡藍、國家=淡青、文章=一般白(09-24) */
-.toc-sticky > details > summary .font-semibold { color: #93c5fd; }            /* 地區 */
-.toc-sticky > details details > summary .font-semibold { color: #7dd3fc; font-size: 14px; } /* 國家/系列 */
-.toc-sticky details ul li a .font-semibold { color: #e5e7eb; font-weight: 500; } /* 文章 */
-.toc-sticky > details > summary { background: rgba(147,197,253,.10) !important; }
-.toc-sticky > details details > summary { background: rgba(125,211,252,.07) !important; }
+/* 左欄三層(他 09-24:第一層用 Claude Code 側欄那種「區段標題」的樣子,不要方框)*/
+.toc-sticky > details > summary{
+  background:none !important; border:0 !important; box-shadow:none !important;
+  padding:.35rem .25rem !important; border-radius:0 !important;
+  font-size:12px; letter-spacing:.08em; text-transform:none;
+  color:#8fb6e8; transform:none !important;
+}
+.toc-sticky > details > summary:hover{ color:#bfdbfe; }
+.toc-sticky > details > summary .font-semibold{ font-weight:600; }
+/* 第二層:國家 —— 細長一列,左邊一個小點 */
+.toc-sticky > details details > summary{
+  background:none !important; border:0 !important; box-shadow:none !important;
+  padding:.3rem .25rem .3rem .75rem !important; border-radius:6px !important;
+  color:#cbd5e1; transform:none !important; position:relative;
+}
+.toc-sticky > details details > summary::before{
+  content:""; position:absolute; left:.1rem; top:50%; width:5px; height:5px; margin-top:-2.5px;
+  border-radius:50%; background:#64748b;
+}
+.toc-sticky > details details[open] > summary::before{ background:#60a5fa; }
+.toc-sticky > details details > summary:hover{ background:rgba(148,163,184,.12) !important; color:#fff; }
+/* 第三層:文章 —— 保留卡片感,但淡一點 */
+.toc-sticky details ul li a{ background:rgba(255,255,255,.05) !important; }
+.toc-sticky details ul li a .font-semibold{ color:#e5e7eb; font-weight:500; }
+.toc-sticky details ul li a:hover{ background:rgba(255,255,255,.12) !important; }
 
 /* 「← 回列表」按鈕:用主色系凸顯(09-24) */
 .back-btn { background: rgba(147,197,253,.14) !important; border-color: #60a5fa !important; color: #bfdbfe !important; }
