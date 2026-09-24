@@ -61,8 +61,12 @@
 
 /* 首頁地球:桌機靠右下,不擋住照片裡的人;手機回到一般流(09-24) */
 @media (min-width:1024px){
-  #globe-wrap{ position:absolute; right:1.5rem; bottom:1rem; margin:0; z-index:2; }
+  #globe-wrap{ position:absolute; right:1.5rem; top:1rem; margin:0; z-index:2; }
   #globe-wrap canvas{ width:340px !important; }
 }
 #globe-wrap canvas{ filter: drop-shadow(0 12px 28px rgba(0,0,0,.45)); }
 #globe-label{ text-shadow:0 1px 3px rgba(0,0,0,.6); }
+
+/* 從照片裡的人拉到地球上那個國家的方向線(桌機才顯示) */
+#globe-pointer{ position:absolute; inset:0; pointer-events:none; z-index:1; display:none; }
+@media (min-width:1024px){ #globe-pointer{ display:block; } }

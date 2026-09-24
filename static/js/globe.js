@@ -52,7 +52,49 @@
       ctx.fillText(String(p.n), c[0], c[1] + .5);
     });
   }
-  function tick() { dash = (dash + .35) % 12; if (spin) rot[0] += .18; draw(); raf = requestAnimationFrame(tick); }
+
+  // ── 方向線:照片裡的人 → 地球上正對著的國家(他 09-24 手畫的箭頭)
+  var RIDER = { x: .305, y: .36 };   // 首頁大圖裁切後,人的頭盔位置(比例)
+  var host = document.getElementById('globe-wrap');
+  var box = host && host.offsetParent;           // 橫幅內容區(position:relative)
+  var svg = null, pathEl = null, dotA = null, dotB = null, tag = null;
+  if (box) {
+    var NS = 'http://www.w3.org/2000/svg';
+    svg = document.createElementNS(NS, 'svg'); svg.id = 'globe-pointer';
+    svg.innerHTML = '<defs><linearGradient id="gp-grad" x1="0" y1="0" x2="1" y2="0">'
+      + '<stop offset="0" stop-color="#ffffff" stop-opacity=".25"/><stop offset="1" stop-color="#fbbf24" stop-opacity=".95"/></linearGradient></defs>'
+      + '<path id="gp-path" fill="none" stroke="url(#gp-grad)" stroke-width="2" stroke-dasharray="6 7" stroke-linecap="round"/>'
+      + '<circle id="gp-a" r="4" fill="#fff" fill-opacity=".85"/><circle id="gp-b" r="6" fill="none" stroke="#fbbf24" stroke-width="2"/>'
+      + '<text id="gp-tag" font-size="13" font-weight="700" fill="#fff" style="paint-order:stroke;stroke:rgba(0,0,0,.55);stroke-width:3px"></text>';
+    box.appendChild(svg);
+    pathEl = svg.querySelector('#gp-path'); dotA = svg.querySelector('#gp-a'); dotB = svg.querySelector('#gp-b'); tag = svg.querySelector('#gp-tag');
+  }
+  var bgImg = document.querySelector('img[src*="home-bg"]');
+  function frontMost() {
+    if (hover) return hover;
+    var best = null, bd = 9;
+    pts.forEach(function (p) { var d = d3.geoDistance([p.lon, p.lat], [-rot[0], -rot[1]]); if (d < bd) { bd = d; best = p; } });
+    return bd < 1.2 ? best : null;
+  }
+  function pointer() {
+    if (!svg || getComputedStyle(svg).display === 'none') return;
+    var p = frontMost();
+    if (!p) { pathEl.setAttribute('d', ''); dotA.setAttribute('r', 0); dotB.setAttribute('r', 0); tag.textContent = ''; return; }
+    var br = box.getBoundingClientRect(), cr = cv.getBoundingClientRect(), s = cr.width / W;
+    var c = proj([p.lon, p.lat]); if (!c) return;
+    var bx = cr.left - br.left + c[0] * s, by = cr.top - br.top + c[1] * s;
+    var ir = (bgImg || box).getBoundingClientRect();
+    var ax = ir.left - br.left + RIDER.x * ir.width, ay = ir.top - br.top + RIDER.y * ir.height;
+    var mx = (ax + bx) / 2, my = Math.min(ay, by) - 60;          // 往上拱的弧線
+    pathEl.setAttribute('d', 'M' + ax + ',' + ay + ' Q' + mx + ',' + my + ' ' + bx + ',' + by);
+    pathEl.setAttribute('stroke-dashoffset', -dash * 1.2);
+    dotA.setAttribute('cx', ax); dotA.setAttribute('cy', ay); dotA.setAttribute('r', 4);
+    dotB.setAttribute('cx', bx); dotB.setAttribute('cy', by); dotB.setAttribute('r', 6 + Math.sin(dash / 12 * 6.2832) * 1.5);
+    tag.setAttribute('x', bx - 8); tag.setAttribute('y', by - 14); tag.setAttribute('text-anchor', 'end');
+    tag.textContent = p.name + ' · ' + p.n + ' 篇';
+  }
+
+  function tick() { dash = (dash + .35) % 12; if (spin) rot[0] += .18; draw(); pointer(); raf = requestAnimationFrame(tick); }
   function start() { if (!raf) raf = requestAnimationFrame(tick); }
   function stop() { if (raf) { cancelAnimationFrame(raf); raf = null; } }
 
