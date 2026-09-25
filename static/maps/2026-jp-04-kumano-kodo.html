@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56a4ae4b5e82cf12abcc7190f5c414ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    <h3 style='position:fixed;top:8px;left:60px;z-index:9999;background:#fff;padding:4px 10px;border-radius:6px;font-family:sans-serif'>4-熊野古道</h3>
+    
+            <div class="folium-map" id="map_56a4ae4b5e82cf12abcc7190f5c414ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_56a4ae4b5e82cf12abcc7190f5c414ea = L.map(
+                "map_56a4ae4b5e82cf12abcc7190f5c414ea",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+
+            
+
+        
+    
+            var tile_layer_eb9d5e346dd585203710a9431b6d8c57 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eb9d5e346dd585203710a9431b6d8c57.addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            var poly_line_1c8a6eb3d65a5dae707076a0ccd053eb = L.polyline(
+                [[34.434922, 135.243514], [34.436, 135.243483], [34.733661, 135.502197], [35.494247, 134.226181], [35.526458, 134.207686], [35.529081, 134.209611], [35.531672, 134.219253], [35.533883, 134.222656], [35.533989, 134.230439], [35.539733, 134.237411], [35.542867, 134.236633], [35.528903, 134.213792], [35.492539, 134.227539], [35.432786, 133.036514], [35.458072, 133.014297], [35.465908, 133.011275], [35.488589, 133.059172], [35.375503, 132.743714], [35.381186, 132.739869], [35.396564, 132.686508], [35.399178, 132.685517], [35.396225, 132.686356], [35.392536, 132.687072], [35.407139, 132.661544], [35.410786, 132.653794], [35.400336, 132.672486], [35.397428, 132.681228], [35.393292, 132.687119], [35.396797, 132.778106], [35.403044, 132.785539], [35.447808, 132.851683], [35.452472, 132.861892], [35.464447, 132.882722], [35.48085, 132.970856], [35.479789, 132.974244], [35.469311, 133.052917], [35.473606, 133.302247], [35.486367, 133.278947], [35.521531, 133.210892], [35.519608, 133.201294], [35.522183, 133.18135], [35.530931, 133.162767], [35.556175, 133.174408], [35.558614, 133.176375], [35.562503, 133.172975], [35.564228, 133.169206], [35.56305, 133.172394], [35.559789, 133.175203], [35.562458, 133.192397], [35.566333, 133.210725], [35.550547, 133.231797], [35.545508, 133.225419], [35.512333, 133.252394], [35.508544, 133.254897], [35.505806, 133.257339], [35.501853, 133.260742], [35.497436, 133.264708], [35.491558, 133.27185], [35.485039, 133.277161], [35.425194, 133.332717], [35.425081, 133.333358], [35.4226, 133.330292], [35.433086, 133.194122], [35.43925, 133.173325], [35.442019, 133.158386], [35.457131, 133.101958], [35.475278, 133.068664], [35.475883, 133.058228], [35.475956, 133.054153], [35.472256, 133.051544], [35.474675, 133.049089], [35.477875, 133.048553], [35.467394, 133.045364], [35.464653, 133.052781], [35.463958, 133.056106], [35.423458, 133.336106], [35.424719, 133.335419], [35.517792, 133.556808], [35.517833, 133.560775], [35.49435, 134.225922], [35.600144, 134.349625], [35.599517, 134.357742], [35.59975, 134.361114], [35.648839, 134.557725], [35.652286, 134.574294], [35.640922, 134.610533], [35.647575, 134.661256], [35.659772, 134.759108], [35.658508, 134.744706], [35.628392, 134.811539], [35.602333, 134.894867], [35.604911, 134.911147], [35.605944, 134.916214], [35.628422, 134.927431], [35.667314, 135.025161], [35.550342, 135.151322], [35.554236, 135.140869], [35.573569, 135.154586], [35.582969, 135.195144], [35.60105, 135.219925], [35.617053, 135.236481], [35.619219, 135.242692], [35.627031, 135.245772], [35.630986, 135.245881], [35.652794, 135.255006], [35.662086, 135.263411], [35.66775, 135.271072], [35.667747, 135.275039], [35.670442, 135.27745], [35.671361, 135.283356], [35.674911, 135.286483], [35.67395, 135.290558], [35.670658, 135.294633], [35.666469, 135.289169], [35.664211, 135.291764], [35.675767, 135.287767], [35.578094, 135.197892], [35.581619, 135.195633], [35.576228, 135.197114], [35.570708, 135.192108], [35.566075, 135.18895], [35.561492, 135.187714], [35.558803, 135.186508], [35.573617, 135.154617], [35.550383, 135.151214], [35.53865, 135.244431], [35.525394, 135.271514], [35.511994, 135.285278], [35.474083, 135.395369], [35.474197, 135.385283], [35.47715, 135.392564], [35.474419, 135.395369], [35.476336, 135.393019], [35.605053, 135.936675], [35.610067, 135.911514], [35.606256, 135.911317], [35.612053, 135.890761], [35.610722, 135.885742], [35.607536, 135.88565], [35.603639, 135.887008], [35.599711, 135.887239], [35.602897, 135.888092], [35.599697, 135.888], [35.599758, 135.891694], [35.593508, 135.898819], [35.591469, 135.895722], [35.591489, 135.892106], [35.592914, 135.888642], [35.596356, 135.888153], [35.599475, 135.883042], [35.591914, 135.876008], [35.588322, 135.877503], [35.577969, 135.877792], [35.560844, 135.897019], [35.562425, 135.902419], [35.570042, 135.896103], [35.573369, 135.898728], [35.575181, 135.901244], [35.577861, 135.90175], [35.595086, 135.918397], [35.598944, 135.912903], [35.610042, 135.911544], [35.609775, 135.911925], [35.612811, 135.912308], [35.640281, 135.989289], [35.643878, 135.984528], [35.659922, 135.966981], [35.662889, 135.966858], [35.666631, 135.967194], [35.671275, 135.969344], [35.674944, 135.969969], [35.680425, 135.975236], [35.683344, 135.976683], [35.676164, 136.031753], [35.656278, 136.04625], [35.656403, 136.068056], [35.658519, 136.07335], [35.661189, 136.072692], [35.654114, 136.075531], [35.645339, 136.076033], [35.138864, 136.088639], [35.139347, 136.078903], [35.136697, 136.0728], [35.138839, 136.069581], [35.140994, 136.066208], [35.144239, 136.060378], [35.158561, 136.060592], [35.161506, 136.058778], [35.166411, 136.059158], [35.170608, 136.059464], [35.179731, 136.056381], [35.18485, 136.068175], [35.189189, 136.082594], [35.242292, 136.179856], [35.245364, 136.186478], [35.247367, 136.190278], [35.260856, 136.213347], [35.270692, 136.228669], [35.280986, 136.250275], [35.278386, 136.252061], [35.276311, 136.254683], [35.277661, 136.258897], [35.280197, 136.254394], [35.287747, 136.250656], [35.2898, 136.252822], [35.293042, 136.255858], [35.318681, 136.267456], [35.326222, 136.270217], [35.328933, 136.270339], [35.359147, 136.278092], [35.377247, 136.261964], [35.386811, 136.239578], [35.453872, 136.199508], [35.502922, 136.179047], [35.499072, 136.176331], [35.500386, 136.173217], [35.486367, 136.117906], [35.481911, 136.113144], [35.478272, 136.112761], [35.475472, 136.111192], [35.464394, 136.107056], [35.452094, 136.100844], [35.450722, 136.0979], [35.449739, 136.094575], [35.448617, 136.091217], [35.453939, 136.083375], [35.457297, 136.082489], [35.4607, 136.080794], [35.465175, 136.051256], [35.467953, 136.049836], [35.4672, 136.035919], [35.472375, 136.036361], [35.451581, 136.058625], [35.430094, 136.041231], [35.426239, 136.043289], [35.405522, 136.039244], [34.994072, 135.818817], [34.995381, 135.815353], [34.992808, 135.811814], [34.996906, 135.809083], [34.992706, 135.811919], [34.99535, 135.814742], [34.997097, 135.818481], [34.995347, 135.814697], [34.998783, 135.805375], [35.00835, 135.789947], [35.009394, 135.786042], [35.009269, 135.780808], [35.000847, 135.770967], [34.992889, 135.767761], [34.986744, 135.768111], [34.983692, 135.768508], [34.968483, 135.760253], [34.947833, 135.741211], [34.893086, 135.69905], [34.890419, 135.700622], [34.825169, 135.647492], [34.719336, 135.519272], [34.715692, 135.52185], [34.712781, 135.522064], [34.710261, 135.520767], [34.7037, 135.520217], [34.697083, 135.523453], [34.692142, 135.521683], [34.691658, 135.515839], [34.687753, 135.510131], [34.688369, 135.520369], [34.685219, 135.521972], [34.682781, 135.524917], [33.798283, 135.520233], [33.803872, 135.5316], [33.817569, 135.555831], [33.810253, 135.609742], [33.809783, 135.609131], [33.814464, 135.605683], [33.827914, 135.634169], [33.829711, 135.638931], [33.816608, 135.678008], [33.823075, 135.753036], [33.828811, 135.757661], [33.829719, 135.758239], [33.837606, 135.774461], [33.861606, 135.721083], [33.860022, 135.734222], [33.840831, 135.771758], [33.860375, 135.756928], [33.838464, 135.775483], [33.83785, 135.776397], [33.834892, 135.775208], [33.831986, 135.770875], [33.828256, 135.770981], [33.729981, 135.991775], [33.731875, 135.983917], [33.895925, 136.115844], [33.891, 136.116425], [33.805681, 136.043822], [34.544106, 135.443406], [34.578797, 135.484725], [34.581678, 135.468811], [34.733203, 135.498658]],
+                {"bubblingMouseEvents": true, "color": "#555", "dashArray": "6 8", "dashOffset": null, "fill": false, "fillColor": "#555", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_1c8a6eb3d65a5dae707076a0ccd053eb.bindTooltip(
+                `<div>
+                     整趟路線
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dd60d2220e8f9bbafa9cc35c9302b13b = L.polyline(
+                [[35.736603, 137.713058], [36.114539, 137.948106], [36.151497, 137.938247], [36.176644, 137.945419], [36.181492, 137.945022], [36.188325, 137.945892], [36.203186, 137.943864], [36.233128, 137.966981], [36.695969, 137.863342], [36.657892, 137.847319], [36.662842, 137.836517], [36.657536, 137.848206], [36.657192, 137.853761], [36.675925, 137.8499], [36.688342, 137.852661], [36.708911, 137.839919], [36.707519, 137.846283], [36.711053, 137.8582], [36.716156, 137.860947], [36.719611, 137.861769], [36.732953, 137.860764], [36.734589, 137.865922], [36.7413, 137.871628], [36.747219, 137.869217], [36.71925, 137.865311], [36.714394, 137.872178], [36.709106, 137.874467], [36.707508, 137.88005], [36.703472, 137.877731], [36.700844, 137.874633], [36.697617, 137.873458], [36.696244, 137.869583], [36.690692, 137.856903], [36.660564, 137.839936], [36.657631, 137.841431], [36.646592, 137.85875], [36.642994, 137.853469], [36.618222, 137.859147], [36.6123, 137.858825], [36.607703, 137.856261], [36.602433, 137.848022], [36.599578, 137.845489], [36.607314, 137.845658], [36.614086, 137.842789], [36.618419, 137.843689], [36.618003, 137.84735], [36.616828, 137.852569], [36.618836, 137.858186], [36.625703, 137.852233], [36.629392, 137.845903], [36.627056, 137.847625], [36.630056, 137.845642], [36.638153, 137.844772], [36.672169, 137.847183], [36.680133, 137.850831], [36.701733, 137.845658], [36.693642, 137.848433], [36.660942, 137.849411], [36.660453, 137.839692], [36.657892, 137.847381], [36.637992, 137.842453], [36.565711, 137.841719], [36.562306, 137.844406], [36.339947, 137.881911], [36.344989, 137.891097], [36.339419, 137.893158], [36.339886, 137.908644], [36.337058, 137.908844], [36.326278, 137.906617], [36.323586, 137.886017], [36.322461, 137.875625], [36.308997, 137.880858], [36.302181, 137.879517], [35.969017, 137.815492], [35.966594, 137.812378], [35.963903, 137.809356], [35.931644, 137.782958], [35.902631, 137.774094], [35.898778, 137.770981], [35.895967, 137.764908], [35.893028, 137.764131], [35.889378, 137.7603], [35.868733, 137.740142], [35.865578, 137.733903], [35.850922, 137.699617], [35.850922, 137.699325], [35.848811, 137.695069], [35.842442, 137.690431], [35.807286, 137.687775], [35.800536, 137.690094], [35.775547, 137.690842], [35.778275, 137.690706], [35.637367, 137.615783], [35.530369, 137.533081], [35.527697, 137.531356], [35.524781, 137.529739], [35.494106, 137.500611]],
+                {"bubblingMouseEvents": true, "color": "#555", "dashArray": "6 8", "dashOffset": null, "fill": false, "fillColor": "#555", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_dd60d2220e8f9bbafa9cc35c9302b13b.bindTooltip(
+                `<div>
+                     整趟路線
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var tile_layer_951bc69098dbb19493cb70bd358a1915 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_cc20ba159e03add14aecc385cbc6c8ef = new L.Control.MiniMap(
+                tile_layer_951bc69098dbb19493cb70bd358a1915,
+                {
+  "position": "bottomright",
+  "width": 220,
+  "height": 160,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -4,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_56a4ae4b5e82cf12abcc7190f5c414ea.addControl(mini_map_cc20ba159e03add14aecc385cbc6c8ef);
+        
+    
+            var poly_line_e7749341b68c94518f3958304aa06e41 = L.polyline(
+                [[33.798283, 135.520233], [33.803872, 135.5316], [33.817569, 135.555831], [33.810253, 135.609742]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_e7749341b68c94518f3958304aa06e41.bindTooltip(
+                `<div>
+                     2026-04-01 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38cc1dc172d67c2bfc7c8962888cc457 = L.circleMarker(
+                [33.798283, 135.520233],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_38cc1dc172d67c2bfc7c8962888cc457.bindTooltip(
+                `<div>
+                     2026-04-01 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_df6137350f208677ae7cb6d1c0592903 = L.polyline(
+                [[33.809783, 135.609131], [33.814464, 135.605683], [33.827914, 135.634169], [33.829711, 135.638931], [33.816608, 135.678008], [33.823075, 135.753036], [33.828811, 135.757661]],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#1f77b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_df6137350f208677ae7cb6d1c0592903.bindTooltip(
+                `<div>
+                     2026-04-02 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41b838c13aaafa4332be04054528538e = L.circleMarker(
+                [33.809783, 135.609131],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_41b838c13aaafa4332be04054528538e.bindTooltip(
+                `<div>
+                     2026-04-02 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ce6e6bdcced36a54dc2805d9ba5244a0 = L.polyline(
+                [[33.829719, 135.758239], [33.837606, 135.774461], [33.861606, 135.721083], [33.860022, 135.734222], [33.840831, 135.771758], [33.860375, 135.756928], [33.838464, 135.775483]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_ce6e6bdcced36a54dc2805d9ba5244a0.bindTooltip(
+                `<div>
+                     2026-04-03 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9678e5cbab8ec55bbc54b87a6fda4c7e = L.circleMarker(
+                [33.829719, 135.758239],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_9678e5cbab8ec55bbc54b87a6fda4c7e.bindTooltip(
+                `<div>
+                     2026-04-03 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a1fa8f530a8341ff0fa13801a04fddf3 = L.polyline(
+                [[33.83785, 135.776397], [33.834892, 135.775208], [33.831986, 135.770875], [33.828256, 135.770981]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_a1fa8f530a8341ff0fa13801a04fddf3.bindTooltip(
+                `<div>
+                     2026-04-04 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_946c5d1d8cb4f9cecddb6ef734070ad8 = L.circleMarker(
+                [33.83785, 135.776397],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_946c5d1d8cb4f9cecddb6ef734070ad8.bindTooltip(
+                `<div>
+                     2026-04-04 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9cc50025b33db1fddeefe04cb727a5a9 = L.polyline(
+                [[33.729981, 135.991775], [33.731875, 135.983917], [33.895925, 136.115844], [33.891, 136.116425], [33.805681, 136.043822]],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#9467bd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_9cc50025b33db1fddeefe04cb727a5a9.bindTooltip(
+                `<div>
+                     2026-04-05 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c4916401ad49cf13611c33b5cae2c59 = L.circleMarker(
+                [33.729981, 135.991775],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_5c4916401ad49cf13611c33b5cae2c59.bindTooltip(
+                `<div>
+                     2026-04-05 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7d9a7acc10ccdc74088f02f1638e8b53 = L.polyline(
+                [[34.544106, 135.443406], [34.578797, 135.484725], [34.581678, 135.468811]],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": "2 6", "dashOffset": null, "fill": false, "fillColor": "#8c564b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            poly_line_7d9a7acc10ccdc74088f02f1638e8b53.bindTooltip(
+                `<div>
+                     2026-04-08 · 4-熊野古道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ddebf76847a2a6dd035cb95dacb1197 = L.circleMarker(
+                [34.544106, 135.443406],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            circle_marker_8ddebf76847a2a6dd035cb95dacb1197.bindTooltip(
+                `<div>
+                     2026-04-08 · 4-熊野古道 起
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_56a4ae4b5e82cf12abcc7190f5c414ea.fitBounds(
+                [[33.729981, 135.443406], [34.581678, 136.116425]],
+                {}
+            );
+        
+    
+            var marker_d100787f69c642cca7042ceffc7af172 = L.marker(
+                [33.798283, 135.520233],
+                {
+}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            var div_icon_676aafe1bdbf971f199b6da5f98d351f = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#2563eb;color:#fff;border-radius:50%;width:22px;height:22px;line-height:22px;text-align:center;font-weight:700;font-family:sans-serif\u0027\u003eA\u003c/div\u003e",
+  "iconSize": [22, 22],
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+            marker_d100787f69c642cca7042ceffc7af172.bindTooltip(
+                `<div>
+                     A 起點
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d100787f69c642cca7042ceffc7af172.setIcon(div_icon_676aafe1bdbf971f199b6da5f98d351f);
+            
+    
+            var marker_771297ecd06f8721c454a4d7dfbc7514 = L.marker(
+                [34.581678, 135.468811],
+                {
+}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            var div_icon_387c2fd432a7c73e131b3e4b6bede07a = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#e5484d;color:#fff;border-radius:50%;width:22px;height:22px;line-height:22px;text-align:center;font-weight:700;font-family:sans-serif\u0027\u003eB\u003c/div\u003e",
+  "iconSize": [22, 22],
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+            marker_771297ecd06f8721c454a4d7dfbc7514.bindTooltip(
+                `<div>
+                     B 終點
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_771297ecd06f8721c454a4d7dfbc7514.setIcon(div_icon_387c2fd432a7c73e131b3e4b6bede07a);
+            
+    
+            var marker_e41b4669a9061cc0b4b52f1b0077a9d1 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_56a4ae4b5e82cf12abcc7190f5c414ea);
+        
+    
+            var div_icon_01332823d2da7a58d6ace8cbb2cf13ca = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+        
+    
+                marker_e41b4669a9061cc0b4b52f1b0077a9d1.setIcon(div_icon_01332823d2da7a58d6ace8cbb2cf13ca);
+            
+</script>
+</html>
